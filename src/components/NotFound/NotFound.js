@@ -22,8 +22,8 @@ export const NotFound = () => {
             {t('notfound.part2')}
           </span>
           <br />
-          <Link className='link' to='/'>
-            <button> {t('notfound.redirect')}</button>
+          <Link className="link" to="/">
+            <button>Back to Home</button>
           </Link>
         </div>
       </div>

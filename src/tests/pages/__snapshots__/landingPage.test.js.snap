@@ -232,8 +232,7 @@ exports[`home page should return the not found page 1`] = `
         to="/"
       >
         <button>
-           
-          notfound.redirect
+          Back to Home
         </button>
       </Link>
     </div>

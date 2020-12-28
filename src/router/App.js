@@ -8,6 +8,7 @@ import { Helmet } from 'react-helmet';
 import { useTranslation } from 'react-i18next';
 import Forgot from '../components/resetPassword/Forgot';
 import Reset from '../components/resetPassword/Reset';
+import SigninPage from '../pages/SigninPage';
 
 const App = () => {
   const { t } = useTranslation();
@@ -20,9 +21,9 @@ const App = () => {
         <Route path='/' exact component={LandingPage} />
         <Route path='/about' exact component={About} />
         <Route path='/contact' exact component={Contact} />
-        <Route path='/' exact component={LandingPage} />
         <Route path='/forgotpassword' exact component={Forgot} />
         <Route path='/reset' exact component={Reset} />
+        <Route path='/signin' component={SigninPage} />
         <Route component={NotFound} />
       </Switch>
     </Router>

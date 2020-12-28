@@ -29,17 +29,16 @@ exports[`home page should return the welcoming page 1`] = `
     <Route
       component={[Function]}
       exact={true}
-      path="/"
-    />
-    <Route
-      component={[Function]}
-      exact={true}
       path="/forgotpassword"
     />
     <Route
       component={[Function]}
       exact={true}
       path="/reset"
+    />
+    <Route
+      component={[Function]}
+      path="/signin"
     />
     <Route
       component={[Function]}

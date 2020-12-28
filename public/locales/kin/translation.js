@@ -4,13 +4,13 @@ export default {
     about: 'Tumenye',
     terms: 'Amabwiriza',
     contact: 'Tuvugishe',
-    signup: 'Iyandikishe',
+    signup: 'Iyandikishe'
   },
   title: 'MURAKAZA NEZA KURI PHANTOM',
   webtitle: 'Phantom | Ingendo rusange zorohejwe',
   description: {
     slogan: "Reba ingenda z'ikinyabiziga cyawe rusange aho uri hose.",
-    startBtn: 'Tangira hano',
+    startBtn: 'Tangira hano'
   },
   about: {
     title:
@@ -18,7 +18,7 @@ export default {
     1: 'Igihe nyacyo cyo gukurikirana bisi yawe ikurikira hanyuma ugashyiraho gahunda yawe.',
     2: 'Byoroshye kumenya no gukurikirana bisi yawe kurikarita. Genda muri bisi mugihe rwose iri hafi.',
     3: 'Igihe nyacyo cyo gukurikirana bisi ikurikira hanyuma ushireho gahunda yawe ukurikije.',
-    4: 'Byoroshye kumenya no gukurikirana bisi yawe kurikarita. Genda muri bisi mugihe rwose iri hafi.',
+    4: 'Byoroshye kumenya no gukurikirana bisi yawe kurikarita. Genda muri bisi mugihe rwose iri hafi.'
   },
   contact: {
     title: 'Twandikire',
@@ -26,14 +26,36 @@ export default {
     email: 'Imeyili yawe:',
     phone: 'Nimero za Telefone:',
     enquiry: 'Ubutumwa:',
-    sendBtn: 'Ohereza',
+    sendBtn: 'Ohereza'
   },
   notfound: {
     title: 'NTABWO HABONETSE :(',
     part1: 'Mwihangane, ibyo musabye nabwo bibashije kuboneka,',
     part2:
       'Kanda kuri icyo kimenyetso gikurikira maze ubashe gusubira ahabanza',
-    redirect: 'Subira Ahabanza',
+    redirect: 'Subira Ahabanza'
+  },
+  forgot: {
+    title: 'Wibagiwe Ijambobanga?',
+    placeHolder: 'Injiza Email Yawe',
+    paragraph:
+      'Numara gukanda kuri Saba guhindura, inzira yo guhindura ijambobanga turayikoherereza kuri email yawe',
+    btn: 'Ohereza Ubusabe',
+    back: 'Subira kwinjira',
+    success: 'Byagenze neza Reba muri email yawe',
+    fail: 'Ntamuntu wagaragaye ukoresha iyo email',
+    error: 'Habayemo ikibazo reba niba ufite murandasi wongere ugerageze',
+  },
+  reset: {
+    title: 'Hindura Ijambobanga',
+    newPassword: 'Injiza ijambobanga rishya',
+    comfirmPassword: 'Subiramo ijambobanga rishya',
+    paragraph:
+      ' Numara gukora ijambobanga rishya niryo uzajya ukoresha winjira.',
+    btn: 'Hindura Ijambobanga',
+    success: 'Your password reset successfully',
+    fail: 'Ntago wemerewe. inzira yawe ishobora kuba ishaje, ongera usabe',
+    error: 'Habayemo ikibazo reba niba ufite murandasi wongere ugerageze',
   },
   forgot: {
     title: 'Wibagiwe Ijambobanga?',
@@ -62,4 +84,18 @@ export default {
     invalidPassword: 'Ijambobanga ntiryemewe',
     invalidComfirm: 'Amajambobanga ntago asa',
   },
+  signin: {
+    title: 'Injira',
+    email: 'Imeyili yawe',
+    password: 'Ijambobanga',
+    sendBtn: 'Ohereza',
+    forgotPassword: 'Mwibagiwe Ijambobanga?',
+    yourEmail: 'Emeyili yanyu...',
+    yourPassword: 'Ijambobanga ryanyu...',
+    errorEmail:
+      'Imeri yawe igomba kuba ifite agaciro; urugero: "email@example.com"',
+    errorPassword: 'Ijambobanga ntirishobora kuba ubusa',
+    errorPass:
+      'Ijambobanga rigomba kuba byibuze inyuguti 5 zirimo inyuguti 4 nimibare'
+  }
 };
