@@ -97,5 +97,12 @@ export default {
     errorPassword: 'Le mot de passe ne peuvent pas être vides',
     errorPass:
       'Le mot de passe doit comporter au moins 5 caractères, dont 4 lettres et chiffres'
+  },
+  logout: {
+    confirm: `ÊTES-VOUS SÛR DE VOULOIR VOUS DÉCONNECTER`,
+    profile: 'Profile',
+    logout: 'Se deconnecte',
+    yes: 'Oui',
+    no: 'Non',
   }
 };

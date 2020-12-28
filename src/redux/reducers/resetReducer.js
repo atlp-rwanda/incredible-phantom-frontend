@@ -4,11 +4,11 @@ import {
   FORGOT_SUCCESS,
   RESET_FAILED,
   RESET_PENDING,
-  RESET_SUCCESS,
+  RESET_SUCCESS
 } from '../actionTypes/actionTypes';
 
 const initialState = {
-  res: '',
+  res: ''
 };
 
 export const forgotReducer = (state = initialState, action) => {
@@ -26,7 +26,7 @@ export const forgotReducer = (state = initialState, action) => {
 };
 
 const initialStateReset = {
-  success: null,
+  success: null
 };
 export const resetReducer = (state = initialStateReset, action) => {
   switch (action.type) {

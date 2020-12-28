@@ -9,3 +9,6 @@ export const RESET_FAILED = 'RESET_FAILED';
 export const SET_LOADING = 'SET_LOADING';
 export const SET_LOGIN = 'SET_LOGIN';
 export const SET_LOGIN_ERROR = 'SET_LOGIN_ERROR';
+export const LOGOUT_REQUEST = 'LOGOUT_REQUEST';
+export const LOGOUT_SUCCESS = 'LOGOUT_SUCCESS';
+export const LOGOUT_ERROR = 'LOGOUT_ERROR';

@@ -24,4 +24,4 @@ Phantom is an app which is used to track bus movements.
 
 ### Heroku deployment Url
 
-https://incredible-phantom-frontend.herokuapp.com/
+https://incredible-frontend.herokuapp.com/
