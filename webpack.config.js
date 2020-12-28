@@ -1,43 +1,50 @@
+require('dotenv/config.js');
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-const ip = require('ip');
-const hostname = ip.address() || 'localhost';
+
+const { PORT } = process.env;
 
 module.exports = {
-  entry: './src/index',
-  output: { path: path.join(__dirname, '/dist'), filename: 'bundle.js' },
-  devServer: {
-    headers: { 'Access-Control-Allow-Origin': '*', https: true },
-    historyApiFallback: true,
-    contentBase: path.resolve(__dirname, './dist'),
+  entry: {
+    index: path.join(__dirname, 'src', 'index.js'),
+  },
+  output: {
+    path: path.join(__dirname, '/dist'),
+    filename: 'index.bundle.js',
     publicPath: '/',
-    host: `${hostname}`,
-    port: 3000,
-    hot: true,
+  },
+  devServer: {
+    contentBase: path.join(__dirname, 'src'),
+    historyApiFallback: true,
+    clientLogLevel: 'silent',
     inline: true,
-    contentBase: './',
-    watchOptions: {
-      poll: true
-    },
-    compress: true,
-    open: true
+    open: true,
+    port: PORT || 4000,
+    hot: true,
   },
   module: {
     rules: [
       {
-        test: /\.(js|jsx)$/,
+        test: /\.js|jsx?$/,
         exclude: /node_modules/,
-        use: 'babel-loader'
+        loader: 'babel-loader',
+        options: {
+          presets: ['@babel/preset-env', '@babel/preset-react'],
+        },
       },
       {
-        test: /\.scss$/,
-        use: ['style-loader', 'css-loader', 'sass-loader']
+        test: /\.(s[ac]|c)ss$/,
+        use: ['style-loader', 'css-loader', 'sass-loader'],
       },
       {
-        test: /\.(png|jpe?g|gif)$/i,
-        loader: 'file-loader'
-      }
-    ]
+        test: /\.(png|jpe?g|gif|mp3|ogg|m4r)$/i,
+        use: [{ loader: 'file-loader' }],
+      },
+    ],
   },
-  plugins: [new HtmlWebpackPlugin({ template: './public/index.html' })]
+  plugins: [
+    new HtmlWebpackPlugin({
+      template: path.join(__dirname, 'public/index.html'),
+    }),
+  ],
 };
