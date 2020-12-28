@@ -9,6 +9,16 @@ exports[`home page should return the welcoming page 1`] = `
       path="/"
     />
     <Route
+      component={[Function]}
+      exact={true}
+      path="/about"
+    />
+    <Route
+      component={[Function]}
+      exact={true}
+      path="/contact"
+    />
+    <Route
       component={
         Object {
           "$$typeof": Symbol(react.memo),
@@ -18,6 +28,10 @@ exports[`home page should return the welcoming page 1`] = `
         }
       }
       path="/counter"
+    />
+    <Route
+      component={[Function]}
+      path="/skeleton"
     />
     <Route
       component={[Function]}

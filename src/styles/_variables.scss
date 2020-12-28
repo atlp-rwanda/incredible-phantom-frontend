@@ -2,3 +2,34 @@ $phantomBackground: #eaeded;
 $phantomLight: #b7e4c7;
 $phantomGreen: #2d6a4f;
 $phantomDark: #081c15;
+$phantomHover: #119354;
+
+@mixin flexCenter($direction) {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: $direction;
+}
+
+@mixin phantomButton() {
+  background-color: $phantomGreen;
+  color: white;
+  padding: 5px 10px 5px 10px;
+  border-radius: 3px;
+  border: none;
+  transition: 0.2s ease-in-out;
+  outline: none;
+  cursor: pointer;
+  &:hover {
+    background-color: $phantomHover;
+  }
+}
+
+@mixin phantomField() {
+  background-color: white;
+  border: 1px solid black;
+  padding: 5px;
+  color: black;
+  border-radius: 3px;
+  outline: none;
+}

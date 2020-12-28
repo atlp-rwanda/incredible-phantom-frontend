@@ -1,0 +1,97 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Skeletons should return the Landing page skeleton ui 1`] = `
+<div
+  className="skeleton-wrapper"
+>
+  <div
+    className="skeleton-landing"
+  >
+    <SkeletonElements
+      type="nav"
+    />
+    <SkeletonElements
+      type="title"
+    />
+    <SkeletonElements
+      type="text"
+    />
+    <SkeletonElements
+      type="body"
+    />
+    <SkeletonElements
+      type="button"
+    />
+  </div>
+</div>
+`;
+
+exports[`Skeletons should return the main skeleton div 1`] = `
+<div
+  className="skeleton undefined"
+/>
+`;
+
+exports[`Skeletons should return the main skeleton div 2`] = `
+<div
+  className="skeleton-wrapper"
+>
+  <div
+    className="skeleton-profile"
+  >
+    <div>
+      <SkeletonElements
+        type="avatar"
+      />
+    </div>
+    <div>
+      <SkeletonElements
+        type="title"
+      />
+      <SkeletonElements
+        type="text"
+      />
+      <SkeletonElements
+        type="text"
+      />
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Skeletons should return the skeleton page 1`] = `
+<div
+  className="profile-wrapper"
+>
+  <SkeletonProfile
+    key="1"
+  />
+  <SkeletonProfile
+    key="2"
+  />
+  <SkeletonProfile
+    key="3"
+  />
+  <SkeletonProfile
+    key="4"
+  />
+  <SkeletonProfile
+    key="5"
+  />
+  <SkeletonProfile
+    key="6"
+  />
+  <SkeletonProfile
+    key="7"
+  />
+  <SkeletonProfile
+    key="8"
+  />
+  <SkeletonProfile
+    key="9"
+  />
+  <SkeletonProfile
+    key="10"
+  />
+</div>
+`;

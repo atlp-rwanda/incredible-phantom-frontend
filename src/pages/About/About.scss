@@ -1,0 +1,73 @@
+@import '../../styles/fonts';
+@import '../../styles/variables';
+
+.About-container {
+  height: 85vh;
+  @include flexCenter(column);
+  .header {
+    width: 60%;
+    margin-bottom: 100px;
+    opacity: 0.8;
+    span {
+      font-family: $subHeaderFont;
+      font-weight: 500;
+      font-size: 1.7rem;
+    }
+  }
+  .Content {
+    @include flexCenter(row);
+    flex-wrap: wrap;
+    width: 60%;
+    justify-content: space-between;
+    .card {
+      width: 50%;
+      min-height: 100px;
+      margin-bottom: 70px;
+      .icon {
+        width: 100%;
+        text-align: justify;
+        font-size: 3rem;
+        margin-bottom: 20px;
+        color: $phantomGreen;
+      }
+      .description {
+        font-family: $normalFont;
+        font-weight: bolder;
+        font-size: 1rem;
+        width: 60%;
+        opacity: 0.7;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 896px) {
+  .About-container {
+    height: auto;
+    .header {
+      width: 95%;
+      margin-top: 80px;
+      span {
+        font-size: 1.2rem;
+      }
+    }
+    .Content {
+      flex-direction: column;
+      width: 100%;
+      .card {
+        width: 75%;
+        padding: 10px;
+        border-bottom: 1px solid $phantomLight;
+        .icon {
+          text-align: center;
+          font-size: 6rem;
+        }
+        .description {
+          text-align: justify;
+          width: 100%;
+          font-size: 1rem;
+        }
+      }
+    }
+  }
+}
