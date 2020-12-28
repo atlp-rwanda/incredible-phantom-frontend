@@ -18,12 +18,14 @@ export const forgotAction = (email) => async (dispatch) => {
     const res = await axios.post(`${BACKEND_URL}/api/users/forgot`, {
       email,
     });
+
     if (res.data.success === true) {
       toast.success(i18next.t('forgot.success'));
+      dispatch({ type: FORGOT_SUCCESS, payload: res.data.success });
+    } else {
+      toast.error(res.message);
+      dispatch({ type: FORGOT_FAILED, payload: res.message });
     }
-    res.data.success === false ? toast.error(res.message) : '';
-
-    dispatch({ type: FORGOT_SUCCESS, payload: res.data.success });
   } catch (error) {
     error.response
       ? toast.error(i18next.t('forgot.fail'))
@@ -43,8 +45,11 @@ export const resetAction = (password, token) => async (dispatch) => {
     });
     if (res.data.success === true) {
       toast.success(i18next.t('reset.success'));
+      dispatch({ type: RESET_SUCCESS, payload: res.data.success });
+    } else {
+      toast.error(res.message);
+      dispatch({ type: RESET_FAILED, payload: res.message });
     }
-    dispatch({ type: RESET_SUCCESS, payload: res.data.success });
   } catch (error) {
     error.response
       ? toast.error(i18next.t('reset.fail'))

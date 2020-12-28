@@ -50,11 +50,9 @@ const Reset = () => {
       <NavigationBar />
       <div className='resetContainer'>
         <div className='left'>
-          <h1 className='logo'>PHANTOM</h1>
           <img src={image} className='forgotImage none' />
-
-          <h2 className='sub-header'>{t('reset.title')}</h2>
-          <p className='para'>{t('reset.paragraph')}</p>
+          <h2 className='small-title'>{t('reset.title')}</h2>
+          <p className='parag'>{t('reset.paragraph')}</p>
 
           <form
             data-testid='form'
@@ -64,6 +62,7 @@ const Reset = () => {
             }}
           >
             <input
+              className='reset-iniput'
               data-testid='password'
               type='password'
               placeholder={t('reset.newPassword')}
@@ -71,6 +70,7 @@ const Reset = () => {
               onChange={(e) => setPassword(e.target.value)}
             />
             <input
+              className='reset-iniput'
               data-testid='comfirm-password'
               type='password'
               placeholder={t('reset.comfirmPassword')}

@@ -6,6 +6,7 @@ import store from './redux/reducers/index';
 import { I18nextProvider } from 'react-i18next';
 import { SkeletonLanding } from './skeletons/skeletonLanding';
 import './i18n';
+import './styles/tailwind.css';
 import './styles/index.scss';
 import i18n from './i18n';
 

@@ -8,9 +8,10 @@ import { logoutReducer } from './logoutReducer';
 const rootReducers = combineReducers({
   navReducer,
   langSelectionReducer,
+  logoutReducer,
   forgotReducer,
   resetReducer,
   auth: isLoggedReducer,
-  logoutReducer
+  logoutReducer,
 });
 export default rootReducers;

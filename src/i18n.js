@@ -7,20 +7,20 @@ import translationFR from '../public/locales/fr/translation';
 import translationKIN from '../public/locales/kin/translation';
 const resources = {
   en: {
-    translation: translationEN,
+    translation: translationEN
   },
   fr: {
-    translation: translationFR,
+    translation: translationFR
   },
   kin: {
-    translation: translationKIN,
-  },
+    translation: translationKIN
+  }
 };
 const languages = ['en', 'fr', 'kin'];
 const options = {
   order: ['sessionStorage', 'navigator'],
   lookupSessionStorage: 'i18nextLng',
-  caches: ['sessionStorage'],
+  caches: ['sessionStorage']
 };
 
 i18n
@@ -33,14 +33,14 @@ i18n
     ns: 'translation',
     react: {
       wait: true,
-      useSuspense: false,
+      useSuspense: false
     },
     nonExplicitWhitelist: true,
     whitelist: languages,
     lowerCaseLng: true,
     detection: options,
     interpolation: {
-      escapeValue: false,
-    },
+      escapeValue: false
+    }
   });
 export default i18n;

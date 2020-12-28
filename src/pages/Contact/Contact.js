@@ -17,16 +17,26 @@ export const Contact = () => {
       <div className='Contact-container'>
         <div className='formContainer'>
           <div className='form'>
-            <h2>{t('contact.title')}</h2>
+            <h2 className='text-lg'>{t('contact.title')}</h2>
             <form>
               {t('contact.name')}
-              <input type='text' pattern='[A-Za-z, ]{3,}' required />
+              <input
+                type='text'
+                pattern='[A-Za-z, ]{3,}'
+                required
+                className='reset-iniput'
+              />
               {t('contact.email')}
-              <input type='email' required />
+              <input type='email' required className='reset-iniput' />
               {t('contact.phone')}
-              <input type='number' required />
+              <input type='number' required className='reset-iniput' />
               {t('contact.enquiry')}
-              <textarea name='enquiry' cols='30' rows='10'></textarea>
+              <textarea
+                name='enquiry'
+                cols='30'
+                rows='5'
+                className='reset-iniput'
+              ></textarea>
               <button>{t('contact.sendBtn')}</button>
             </form>
           </div>

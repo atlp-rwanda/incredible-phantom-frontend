@@ -40,14 +40,13 @@ const Forgot = () => {
       <NavigationBar />
       <div className='resetContainer'>
         <div className='left'>
-          <h1 className='logo'>PHANTOM</h1>
           <div className='back'>
             <Link to='/signin'>{t('forgot.back')}</Link>
           </div>
           <img src={image} className='forgotImage none' />
 
-          <h2 className='sub-header'>{t('forgot.title')}</h2>
-          <p className='para'>{t('forgot.paragraph')}</p>
+          <h2 className='small-title'>{t('forgot.title')}</h2>
+          <p className='parag'>{t('forgot.paragraph')}</p>
 
           <form
             data-testid='form'
@@ -57,6 +56,7 @@ const Forgot = () => {
             }}
           >
             <input
+              className='reset-iniput'
               data-testid='email'
               type='email'
               value={email}
