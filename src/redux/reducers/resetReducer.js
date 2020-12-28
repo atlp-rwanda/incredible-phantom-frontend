@@ -19,7 +19,6 @@ export const forgotReducer = (state = initialState, action) => {
       return { ...state, res: action.payload };
     case FORGOT_FAILED:
       return { ...state, res: action.payload };
-
     default:
       return state;
   }
@@ -36,7 +35,6 @@ export const resetReducer = (state = initialStateReset, action) => {
       return { ...state, success: action.payload };
     case RESET_FAILED:
       return { ...state, success: action.payload };
-
     default:
       return state;
   }

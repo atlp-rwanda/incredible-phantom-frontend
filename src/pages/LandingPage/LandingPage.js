@@ -16,7 +16,7 @@ export const LandingPage = () => {
       <div>
         <NavigationBar home={onPage} />
         <div className='Body'>
-          <h1>{t('title')}</h1>
+          <h1 data-testid='welcome'>{t('title')}</h1>
           <span id='phantom-slogan'>{t('description.slogan')}</span>
           <img src={phantomImage} alt='Tracking Bus Icon' />
           <button>

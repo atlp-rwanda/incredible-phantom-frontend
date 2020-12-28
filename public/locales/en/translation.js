@@ -90,5 +90,29 @@ export default {
     operators: 'Operators',
     settings: 'Settings',
     profile: 'Profile'
+  },
+  roles: {
+    create: 'Create Role',
+    created: 'Role created successfully',
+    updated: 'Role updated successfully',
+    already: 'Role already exists',
+    number: 'Numbers cannot be roles',
+    short: 'That cannot be a role',
+    confirm: 'Are you sure you want to delete role ',
+    deleted: 'Role deleted successfully',
+    deleteerror: `There was an error while deleting a role`,
+    edit: 'Edit role',
+    editerror: 'There was an error while editing',
+    editbtn: 'Edit',
+    createbtn: 'Create',
+    deletebtn: 'Delete',
+    savebtn: 'Save',
+    yesbtn: 'Yes',
+    nobtn: 'No',
+    cancelbtn: 'Cancel',
+    roles: 'Roles',
+    createdon: 'Created',
+    editedon: 'Updated',
+    actions: 'actions'
   }
 };

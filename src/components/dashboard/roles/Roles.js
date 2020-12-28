@@ -1,7 +1,12 @@
 import React from 'react';
+import RolesComponent from '../../Roles/Roles';
 
 const Roles = () => {
-  return <div>This is roles options</div>;
+  return (
+    <div>
+      <RolesComponent />
+    </div>
+  );
 };
 
 export default Roles;

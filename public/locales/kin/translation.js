@@ -137,5 +137,29 @@ export default {
     operators: 'Abakoresha',
     settings: 'Igenamiterere',
     profile: 'Umwirondoro'
+  },
+  roles: {
+    create: 'Andikisha umukoresha',
+    created: 'Umukoresha ashizwe muri sisteme',
+    updated: 'Umukoresha ashizwe kugihe birakozwe',
+    already: 'Umukoresha asanzwe ari muri sisteme',
+    number: 'Nabwo imibare yemewe',
+    short: 'Izina ryumukoresha nirigufiya',
+    confirm: 'Uzi neza ko ushaka gusiba umukoresha',
+    deleted: 'Umukoresha arasibwe muri sisteme',
+    deleteerror: `Hari ikibazo kivutse mugusiba umukoresha`,
+    edit: 'Andukura umukoresha',
+    editerror: `Hari ikibazo kivutse mukwandukura umukoresha`,
+    editbtn: 'andukura',
+    deletebtn: 'siba',
+    createbtn: 'andika',
+    savebtn: 'imeza',
+    yesbtn: 'yego',
+    nobtn: 'oya',
+    cancelbtn: 'Hagarika',
+    roles: 'Abakoresha',
+    createdon: 'Yakozwe',
+    editedon: 'Yandukuwe',
+    actions: 'Ibikorwa'
   }
 };

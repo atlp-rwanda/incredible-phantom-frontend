@@ -20,6 +20,23 @@
       font-family: $normalFont;
       form {
         width: 100%;
+        input {
+          @include phantomField();
+          margin-bottom: 30px;
+          height: 20px;
+          width: 100%;
+          padding: 1rem;
+          border-radius: 3px;
+          font-family: $normalFont;
+          font-size: 1.1rem;
+        }
+        textArea {
+          width: 100%;
+          border-radius: 3px;
+          padding: 5px;
+          font-family: $normalFont;
+          outline: none;
+        }
         button {
           @include phantomButton();
           height: 60px;
