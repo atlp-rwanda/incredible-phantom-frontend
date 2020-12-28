@@ -1,0 +1,118 @@
+@import '../../styles/fonts';
+@import '../../styles/variables';
+
+.Contact-container {
+  width: 100%;
+  @include flexCenter(column);
+  .formContainer {
+    width: 30%;
+    margin: auto;
+    border-radius: 3px;
+    background-color: white;
+    padding-bottom: 20px;
+    margin-top: 40px;
+    h2 {
+      font-family: $subHeaderFont;
+    }
+    .form {
+      width: 80%;
+      margin: auto;
+      font-family: $normalFont;
+      form {
+        width: 100%;
+        input {
+          @include phantomField();
+          margin-bottom: 30px;
+          height: 20px;
+          width: 100%;
+          font-family: $normalFont;
+          font-size: 1.1rem;
+        }
+        textArea {
+          width: 100%;
+          border-radius: 3px;
+          padding: 5px;
+          font-family: $normalFont;
+          outline: none;
+        }
+        button {
+          @include phantomButton();
+          height: 60px;
+          font-size: 1.3rem;
+          padding: 5px;
+          width: 100%;
+          margin-top: 20px;
+        }
+      }
+    }
+  }
+  .media {
+    i {
+      margin-right: 20px;
+      font-size: 1.4rem;
+      color: $phantomGreen;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      transition: 0.2s ease-in-out;
+      cursor: pointer;
+      &:hover {
+        color: $phantomHover;
+        transform: scale(1.2);
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 896px) {
+  .Contact-container {
+    width: 100%;
+    @include flexCenter(column);
+    .formContainer {
+      width: 95%;
+      margin: auto;
+      border-radius: 3px;
+      padding-bottom: 40px;
+      margin-top: 50px;
+      h2 {
+        font-family: $subHeaderFont;
+      }
+      .form {
+        width: 80%;
+        margin: auto;
+        form {
+          width: 100%;
+          input {
+            @include phantomField();
+            margin-bottom: 30px;
+            height: 30px;
+            width: 100%;
+            font-family: $normalFont;
+          }
+          textArea {
+            width: 100%;
+            border-radius: 3px;
+            padding: 5px;
+            font-family: $normalFont;
+          }
+          button {
+            @include phantomButton();
+            height: 60px;
+            font-size: 1.3rem;
+            padding: 5px;
+            width: 100%;
+            margin-top: 20px;
+          }
+        }
+      }
+    }
+    .media {
+      i {
+        margin-right: 20px;
+        font-size: 1.4rem;
+        color: $phantomGreen;
+        margin-top: 20px;
+        margin-bottom: 20px;
+      }
+    }
+  }
+}

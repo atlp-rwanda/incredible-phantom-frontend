@@ -1,0 +1,11 @@
+@import '../../styles/fonts';
+@import '../../styles/_variables.scss';
+
+.Footer {
+  width: 100%;
+  height: 5vh;
+  text-align: center;
+  font-family: $normalFont;
+  font-size: 0.8rem;
+  padding: 10px 0px 10px 0px;
+}

@@ -1,24 +1,21 @@
-import React from 'react';
+import React, { Suspense } from 'react';
 import ReactDOM from 'react-dom';
-import './styles/index.scss';
 import App from './router/App';
-import { createStore, applyMiddleware, compose } from 'redux';
-import rootReducer from './reducers/store';
-import thunk from 'redux-thunk';
 import { Provider } from 'react-redux';
-
-const store = createStore(
-  rootReducer,
-  compose(
-    applyMiddleware(thunk),
-    window.__REDUX_DEVTOOLS_EXTENSION__ &&
-      window.__REDUX_DEVTOOLS_EXTENSION__(),
-  ),
-);
+import store from './redux/reducers/index';
+import { I18nextProvider } from 'react-i18next';
+import { SkeletonLanding } from './skeletons/skeletonLanding';
+import './i18n';
+import './styles/index.scss';
+import i18n from './i18n';
 
 ReactDOM.render(
   <Provider store={store}>
-    <App />
+    <Suspense fallback={<SkeletonLanding />}>
+      <I18nextProvider i18n={i18n}>
+        <App />
+      </I18nextProvider>
+    </Suspense>
   </Provider>,
 
   document.getElementById('root'),
