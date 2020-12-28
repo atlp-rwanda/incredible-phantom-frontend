@@ -1,9 +1,9 @@
-import { LandingPage } from '../pages/landingPage';
-import { error } from '../componets/NotFound';
-
 import React from 'react';
+import LandingPage from '../pages/LandingPage';
+import error from '../components/NotFound';
+
 import { Route, BrowserRouter as Router, Switch } from 'react-router-dom';
-export const App = () => {
+const App = () => {
   return (
     <Router>
       <Switch>
@@ -13,3 +13,4 @@ export const App = () => {
     </Router>
   );
 };
+export default App;

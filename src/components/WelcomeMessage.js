@@ -1,5 +1,5 @@
 import '../styles/landingPage.scss';
-import React from 'react'
+import React from 'react';
 export const WelcomeMessage = () => {
   return (
     <div>
@@ -12,3 +12,4 @@ export const WelcomeMessage = () => {
     </div>
   );
 };
+export default WelcomeMessage;
