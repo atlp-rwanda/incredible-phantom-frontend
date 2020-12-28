@@ -1,7 +1,9 @@
 /node_modules
+.DS_Store
+dist/
 /.pnp
 .pnp.js
-/coverage
+coverage
 /build
 .DS_Store
 .env.local
@@ -11,3 +13,4 @@
 dist/
 npm-debug.log*
 .eslintcache
+
