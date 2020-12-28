@@ -21,16 +21,14 @@ export const forgotAction = (email) => async (dispatch) => {
     if (res.data.success === true) {
       toast.success(i18next.t('forgot.success'));
     }
-    if (res.data.success === false) {
-      toast.error(res.message);
-    }
+    res.data.success === false ? toast.error(res.message) : '';
+
     dispatch({ type: FORGOT_SUCCESS, payload: res.data.success });
   } catch (error) {
-    if (error.response) {
-      toast.error(i18next.t('forgot.fail'));
-    } else {
-      toast.error(i18next.t('forgot.error'));
-    }
+    error.response
+      ? toast.error(i18next.t('forgot.fail'))
+      : toast.error(i18next.t('forgot.error'));
+
     dispatch({ type: FORGOT_FAILED, payload: error.response.message });
   }
 };
@@ -48,11 +46,10 @@ export const resetAction = (password, token) => async (dispatch) => {
     }
     dispatch({ type: RESET_SUCCESS, payload: res.data.success });
   } catch (error) {
-    if (error.response) {
-      toast.error(i18next.t('reset.fail'));
-    } else {
-      toast.error(i18next.t('reset.error'));
-    }
+    error.response
+      ? toast.error(i18next.t('reset.fail'))
+      : toast.error(i18next.t('reset.error'));
+
     dispatch({ type: RESET_FAILED, payload: error.response.message });
   }
 };

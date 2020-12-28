@@ -17,6 +17,5 @@ ReactDOM.render(
       </I18nextProvider>
     </Suspense>
   </Provider>,
-
-  document.getElementById('root'),
+  document.getElementById('root')
 );

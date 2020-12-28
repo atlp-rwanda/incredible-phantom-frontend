@@ -1,0 +1,28 @@
+@import './_fonts.scss';
+@import './_variables.scss';
+
+@mixin flexCenter($direction) {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: $direction;
+}
+
+.App {
+  text-align: center;
+}
+
+.welcome-message {
+  @include flexCenter(column);
+  min-height: 100vh;
+}
+#app-name {
+  font-family: $headerFont;
+  color: $phantomDark;
+  font-size: 80px;
+}
+#phantom-slogan {
+  font-family: $normalFont;
+  opacity: 0.5;
+  font-size: 23px;
+}

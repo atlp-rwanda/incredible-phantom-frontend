@@ -4,13 +4,13 @@ export default {
     about: 'About',
     terms: 'Terms and Conditions',
     contact: 'Contact Us',
-    signup: 'Sign Up',
+    signup: 'Sign Up'
   },
   webtitle: 'Phantom | Public transport made easier',
   title: 'WELCOME TO PHANTOM',
   description: {
     slogan: "  Track your Bus' movements anywhere from your device.",
-    startBtn: 'Start tracking!',
+    startBtn: 'Start tracking!'
   },
   about: {
     title:
@@ -18,7 +18,7 @@ export default {
     1: ' Real time tracking your next bus accordingly and set when your schedule accordingly',
     2: "Easily identify and follow your bus on the map. Leave for the bus when it's actually close.",
     3: 'Real time tracking your next bus accordingly and set when your schedule accordingly',
-    4: "Easily identify and follow your bus on the map. Leave for the bus when it's actually close.",
+    4: "Easily identify and follow your bus on the map. Leave for the bus when it's actually close."
   },
   contact: {
     title: 'Contact Us:',
@@ -26,13 +26,13 @@ export default {
     email: 'Email:',
     phone: 'Phone:',
     enquiry: 'Message:',
-    sendBtn: 'Send',
+    sendBtn: 'Send'
   },
   notfound: {
     title: 'NOT FOUND :(',
     part1: 'We are sorry but This Page is not found,',
     part2: 'Hit The button below to get redirected to the home page!',
-    redirect: 'Back to Home',
+    redirect: 'Back to Home'
   },
   forgot: {
     title: 'Forgot Password?',
@@ -61,4 +61,17 @@ export default {
     invalidPassword: 'Password is not  Valid',
     invalidComfirm: "Your passwords don't match",
   },
+  signin: {
+    title: 'Sign In',
+    email: 'Email',
+    password: 'Password',
+    sendBtn: 'LOG IN',
+    forgotPassword: 'Forgot Password?',
+    yourEmail: 'Your email...',
+    yourPassword: 'Your password...',
+    errorEmail: 'Your email should be valid; example: "email@example.com"',
+    errorPassword: "Passwords can't be empty",
+    errorPass:
+      'Password must be at least 5 characters including 4 letters and numbers'
+  }
 };

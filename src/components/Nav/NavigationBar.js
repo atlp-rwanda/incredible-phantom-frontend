@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { LangSelection } from '../LangSelection/LangSelection';
 import { Responsive } from '../Nav/Responsive';
 import { Trans } from 'react-i18next';
+import './NavigationBar.scss';
 
 export const NavigationBar = ({ home, about, contact }) => {
   return (
@@ -24,7 +25,9 @@ export const NavigationBar = ({ home, about, contact }) => {
             <Trans i18nKey="nav.contact">Contact Us</Trans>
           </Link>
           <a className="list" style={{ margin: '0px' }}>
-            <button><Trans i18nKey="nav.signup">Sign Up</Trans></button>
+            <button>
+              <Trans i18nKey="nav.signup">Sign Up</Trans>
+            </button>
           </a>
         </div>
       </div>

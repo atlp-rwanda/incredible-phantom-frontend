@@ -8,7 +8,7 @@ export const Contact = () => {
   const { t } = useTranslation();
   const onPage = {
     fontFamily: 'Roboto Slab, Serif',
-    color: '#2d6a4f',
+    color: '#2d6a4f'
   };
 
   return (
