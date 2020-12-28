@@ -6,6 +6,7 @@ export default {
     contact: 'Nous contacter',
     signup: "S'inscrire",
   },
+  webtitle: 'Phantom | Les transports publics simplifiés',
   title: 'BIENVENUE CHEZ PHANTOM',
   description: {
     slogan:
@@ -15,14 +16,10 @@ export default {
   about: {
     title:
       'Favoriser les mouvements rapides avec Phantom. Nous simulons votre prochain bus vous permettant de suivre votre mouvement.',
-    1:
-      'Suivi en temps réel de votre prochain bus en conséquence et définissez votre horaire en conséquence',
-    2:
-      'Identifiez et suivez facilement votre bus sur la carte. Partez pour le bus quand il est vraiment proche.',
-    3:
-      'Real time tracking your next bus accordingly and set when your schedule accordingly',
-    4:
-      'Identifiez et suivez facilement votre bus sur la carte. Partez pour le bus quand il est vraiment proche.',
+    1: 'Suivi en temps réel de votre prochain bus en conséquence et définissez votre horaire en conséquence',
+    2: 'Identifiez et suivez facilement votre bus sur la carte. Partez pour le bus quand il est vraiment proche.',
+    3: 'Real time tracking your next bus accordingly and set when your schedule accordingly',
+    4: 'Identifiez et suivez facilement votre bus sur la carte. Partez pour le bus quand il est vraiment proche.',
   },
   contact: {
     title: 'Nous contacter:',
@@ -37,6 +34,6 @@ export default {
     part1: 'Nous sommes désolés mais cette page est introuvable,',
     part2:
       "Cliquez sur le bouton ci-dessous pour être redirigé vers la page d'accueil",
-    redirect: 'Réorienter',
+    redirect: `retour à la page d'accueil`,
   },
 };
