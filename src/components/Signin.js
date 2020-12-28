@@ -12,7 +12,7 @@ const LoginForm = ({ submitHandler, error, details, setDetails }) => {
     error
       ? toast.error(error, {
           draggable: true,
-          position: toast.POSITION.TOP_CENTER,
+          position: toast.POSITION.TOP_CENTER
         })
       : '';
   }, [error]);

@@ -1,0 +1,123 @@
+@import '../../styles/fonts';
+@import '../../styles/variables';
+
+.roleTable-container {
+  width: 100%;
+}
+
+table {
+  thead {
+    color: black;
+    font-family: $subHeaderFont;
+    background-color: $phantomLight;
+  }
+  tbody {
+    font-family: $normalFont;
+    font-weight: bold;
+    text-transform: capitalize;
+  }
+}
+
+.addBtn {
+  width: 100%;
+  text-align: right;
+  font-weight: bold;
+  margin-bottom: 10px;
+  button {
+    @include phantomButton();
+    margin-right: 20px;
+    border-radius: 50%;
+    font-size: 20px;
+  }
+}
+
+.editIcon-btn {
+  @include phantomButton();
+  width: fit-content;
+  margin-right: 20px;
+}
+.deleteIcon-btn {
+  @include phantomButton();
+  width: fit-content;
+  background-color: #fb5b5b;
+  &:hover {
+    background-color: red;
+  }
+}
+
+.modal-container {
+  background-color: rgba(0, 0, 0, 0.255);
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  justify-content: center;
+  align-items: center;
+  display: none;
+  .modal {
+    background-color: white;
+    width: 30%;
+    border-radius: 4px;
+    padding: 10px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .modal-content {
+      width: 100%;
+    }
+    h2 {
+      font-weight: bold;
+      font-size: 1.3rem;
+      font-family: $subHeaderFont;
+      text-transform: capitalize;
+    }
+    input {
+      display: inline;
+      font-family: $normalFont;
+      width: 60%;
+      border: 1px solid grey;
+      font-size: 1rem;
+      padding: 5px;
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+    .button-container {
+      font-family: $normalFont;
+      button {
+        @include phantomButton();
+        font-size: 60%;
+      }
+      .delete-btn:nth-child(2) {
+        background-color: #fb5b5b;
+        &:hover {
+          background-color: red;
+        }
+      }
+      .delete-btn {
+        @include phantomButton();
+        margin-right: 10px;
+        width: 80px;
+        font-size: 1rem;
+      }
+      .edit-btn {
+        @include phantomButton();
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 644px) {
+  .roleTable-container {
+    .dates {
+      display: none;
+    }
+    .modal-container {
+      .modal {
+        width: 90%;
+        margin: auto;
+      }
+    }
+  }
+}

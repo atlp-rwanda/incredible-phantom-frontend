@@ -8,7 +8,6 @@
   flex-direction: $direction;
 }
 
-
 .Body {
   height: 85vh;
   @include flexCenter(column);

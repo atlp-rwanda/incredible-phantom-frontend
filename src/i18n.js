@@ -31,12 +31,12 @@ i18n
     fallbackLng: 'en',
     resources,
     ns: 'translation',
+    whitelist: languages,
+    nonExplicitWhitelist: true,
     react: {
       wait: true,
       useSuspense: false
     },
-    nonExplicitWhitelist: true,
-    whitelist: languages,
     lowerCaseLng: true,
     detection: options,
     interpolation: {

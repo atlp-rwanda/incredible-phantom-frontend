@@ -20,3 +20,10 @@ button:focus {
 button:hover {
   opacity: 0.9;
 }
+input,
+button:focus {
+  outline: none;
+}
+button:hover {
+  opacity: 0.9;
+}

@@ -134,5 +134,29 @@ export default {
     operators: 'Operateurs',
     settings: 'Réglages',
     profile: 'Profil'
+  },
+  roles: {
+    create: 'Créer un rôle',
+    created: 'Rôle créé avec succès',
+    updated: 'Rôle mis à jour avec succès',
+    already: 'Ce rôle existe déjà',
+    number: 'Les nombres ne peuvent pas être des rôles',
+    short: 'Cela ne peut pas être un rôle :(',
+    confirm: 'Voulez-vous vraiment supprimer le rôle ',
+    deleted: 'Rôle supprimé avec succès',
+    editerror: `Une erreur s'est produite lors de l'édition`,
+    deleteerror: `Une erreur s'est produite lors de la suppression du rôle`,
+    edit: 'Modifier le rôle',
+    editbtn: 'Éditer',
+    createbtn: 'Créer',
+    deletebtn: 'Effacer',
+    cancelbtn: 'Annuler',
+    savebtn: 'sauver',
+    yesbtn: 'Oui',
+    nobtn: 'Non',
+    roles: 'Les rôles',
+    createdon: 'Créé',
+    editedon: 'Actualisé',
+    actions: 'Actions'
   }
 };
