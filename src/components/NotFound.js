@@ -1,5 +1,5 @@
 import '../styles/landingPage.scss';
-import React from 'react'
+import React from 'react';
 export const error = () => {
   return (
     <div>

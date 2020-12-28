@@ -1,15 +1,16 @@
-import { LandingPage } from '../pages/landingPage';
-import { error } from '../componets/NotFound';
-
+import HomePage from '../pages/HomePage';
 import React from 'react';
+import { error } from '../components/NotFound';
+
 import { Route, BrowserRouter as Router, Switch } from 'react-router-dom';
-export const App = () => {
+const App = () => {
   return (
     <Router>
       <Switch>
-        <Route path='/' exact component={LandingPage} />
+        <Route path="/" exact component={HomePage} />
         <Route component={error} />
       </Switch>
     </Router>
   );
 };
+export default App;
