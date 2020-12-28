@@ -10,21 +10,21 @@ export const Responsive = () => {
   const dispatch = useDispatch();
   const { t } = useTranslation();
   return (
-    <div className='resp-nav'>
-      <div className='logo'>PHANTOM</div>
-      <div className='resp-navigation'>
-        <div className='options'>
+    <div className="resp-nav">
+      <div className="logo">PHANTOM</div>
+      <div className="resp-navigation">
+        <div className="options">
           <LangSelection />
-          <button className='resp-btn'> {t('nav.signup')}</button>
+          <button className="resp-btn"> {t('nav.signup')}</button>
         </div>
         <div
-          data-testid='burger'
+          data-testid="burger"
           onClick={() => dispatch(Switch())}
-          className='burger'
+          className="burger"
         >
           <div
             style={{
-              transform: toggle ? 'rotate(45deg)' : 'rotate(0)',
+              transform: toggle ? 'rotate(45deg)' : 'rotate(0)'
             }}
           />
           <div
@@ -41,44 +41,44 @@ export const Responsive = () => {
         </div>
       </div>
       <div
-        className='links'
+        className="links"
         style={{
-          transform: toggle ? 'translateX(0px)' : 'translateX(-100%)',
+          transform: toggle ? 'translateX(0px)' : 'translateX(-100%)'
         }}
       >
         <Link
-          data-testid='home'
+          data-testid="home"
           onClick={() => dispatch(Switch())}
-          to='/'
-          className='link'
+          to="/"
+          className="link"
         >
           {t('nav.home')}
         </Link>
         <Link
-          data-testid='about'
+          data-testid="about"
           onClick={() => dispatch(Switch())}
-          to='/about'
-          className='link'
+          to="/about"
+          className="link"
         >
           {t('nav.about')}
         </Link>
         <Link
-          data-testid='terms'
+          data-testid="terms"
           onClick={() => dispatch(Switch())}
-          to='/terms'
-          className='link'
+          to="/terms"
+          className="link"
         >
           {t('nav.terms')}
         </Link>
         <Link
-          data-testid='contact'
+          data-testid="contact"
           onClick={() => dispatch(Switch())}
-          to='contact'
-          className='link'
+          to="contact"
+          className="link"
         >
           {t('nav.contact')}
         </Link>
-        <button className='resp-btn'> {t('nav.signup')}</button>
+        <button className="resp-btn"> {t('nav.signup')}</button>
       </div>
     </div>
   );

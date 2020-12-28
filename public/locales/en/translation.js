@@ -73,5 +73,12 @@ export default {
     errorPassword: "Passwords can't be empty",
     errorPass:
       'Password must be at least 5 characters including 4 letters and numbers'
+  },
+  logout: {
+    confirm: 'ARE YOU SURE YOU WANT TO LOGOUT ?',
+    profile: 'Profile',
+    logout: 'Logout',
+    yes: 'Yes',
+    no: 'No',
   }
 };

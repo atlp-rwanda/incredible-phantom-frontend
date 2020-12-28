@@ -42,6 +42,41 @@ exports[`home page should return the welcoming page 1`] = `
     />
     <Route
       component={[Function]}
+      exact={true}
+      path="/"
+    />
+    <Route
+      component={[Function]}
+      exact={true}
+      path="/about"
+    />
+    <Route
+      component={[Function]}
+      exact={true}
+      path="/contact"
+    />
+    <Route
+      component={[Function]}
+      exact={true}
+      path="/"
+    />
+    <Route
+      component={[Function]}
+      exact={true}
+      path="/forgotpassword"
+    />
+    <Route
+      component={[Function]}
+      exact={true}
+      path="/reset"
+    />
+    <Route
+      component={[Function]}
+      exact={true}
+      path="/logout"
+    />
+    <Route
+      component={[Function]}
     />
   </Switch>
 </BrowserRouter>

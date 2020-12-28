@@ -1,27 +1,27 @@
 import {
   forgotReducer,
-  resetReducer,
+  resetReducer
 } from '../../../redux/reducers/resetReducer';
 import {
   RESET_SUCCESS,
   RESET_FAILED,
   FORGOT_SUCCESS,
-  FORGOT_FAILED,
+  FORGOT_FAILED
 } from '../../../redux/actionTypes/actionTypes';
 
 describe('Forgot and Reset reducer', () => {
   const initialState = {
-    res: '',
+    res: ''
   };
   const initialStateReset = {
-    success: null,
+    success: null
   };
   it('Should test forgot reducer', () => {
     expect(
       forgotReducer(initialState, {
         type: FORGOT_SUCCESS,
-        payload: 'test',
-      }),
+        payload: 'test'
+      })
     ).toEqual({ res: 'test' });
   });
 
@@ -29,8 +29,8 @@ describe('Forgot and Reset reducer', () => {
     expect(
       forgotReducer(initialState, {
         type: FORGOT_FAILED,
-        payload: 'test',
-      }),
+        payload: 'test'
+      })
     ).toEqual({ res: 'test' });
   });
 
@@ -38,10 +38,10 @@ describe('Forgot and Reset reducer', () => {
     expect(
       resetReducer(initialStateReset, {
         type: RESET_SUCCESS,
-        payload: 'hello',
-      }),
+        payload: 'hello'
+      })
     ).toEqual({
-      success: 'hello',
+      success: 'hello'
     });
   });
 
@@ -49,10 +49,10 @@ describe('Forgot and Reset reducer', () => {
     expect(
       resetReducer(initialStateReset, {
         type: RESET_FAILED,
-        payload: 'error',
-      }),
+        payload: 'error'
+      })
     ).toEqual({
-      success: 'error',
+      success: 'error'
     });
   });
 });

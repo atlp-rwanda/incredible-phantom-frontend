@@ -9,7 +9,7 @@ export default {
   title: 'MURAKAZA NEZA KURI PHANTOM',
   webtitle: 'Phantom | Ingendo rusange zorohejwe',
   description: {
-    slogan: "Reba ingenda z'ikinyabiziga cyawe rusange aho uri hose.",
+    slogan: "Reba ingendo z'ikinyabiziga rusange aho uri hose.",
     startBtn: 'Tangira hano'
   },
   about: {
@@ -44,7 +44,7 @@ export default {
     back: 'Subira kwinjira',
     success: 'Byagenze neza Reba muri email yawe',
     fail: 'Ntamuntu wagaragaye ukoresha iyo email',
-    error: 'Habayemo ikibazo reba niba ufite murandasi wongere ugerageze',
+    error: 'Habayemo ikibazo reba niba ufite murandasi wongere ugerageze'
   },
   reset: {
     title: 'Hindura Ijambobanga',
@@ -55,7 +55,7 @@ export default {
     btn: 'Hindura Ijambobanga',
     success: 'Your password reset successfully',
     fail: 'Ntago wemerewe. inzira yawe ishobora kuba ishaje, ongera usabe',
-    error: 'Habayemo ikibazo reba niba ufite murandasi wongere ugerageze',
+    error: 'Habayemo ikibazo reba niba ufite murandasi wongere ugerageze'
   },
   forgot: {
     title: 'Wibagiwe Ijambobanga?',
@@ -66,7 +66,7 @@ export default {
     back: 'Subira kwinjira',
     success: 'Byagenze neza Reba muri email yawe',
     fail: 'Ntamuntu wagaragaye ukoresha iyo email',
-    error: 'Habayemo ikibazo reba niba ufite murandasi wongere ugerageze',
+    error: 'Habayemo ikibazo reba niba ufite murandasi wongere ugerageze'
   },
   reset: {
     title: 'Hindura Ijambobanga',
@@ -77,12 +77,12 @@ export default {
     btn: 'Hindura Ijambobanga',
     success: 'Your password reset successfully',
     fail: 'Ntago wemerewe. inzira yawe ishobora kuba ishaje, ongera usabe',
-    error: 'Habayemo ikibazo reba niba ufite murandasi wongere ugerageze',
+    error: 'Habayemo ikibazo reba niba ufite murandasi wongere ugerageze'
   },
   validation: {
     invalidEmail: 'Email ntago yemewe',
     invalidPassword: 'Ijambobanga ntiryemewe',
-    invalidComfirm: 'Amajambobanga ntago asa',
+    invalidComfirm: 'Amajambobanga ntago asa'
   },
   signin: {
     title: 'Injira',
@@ -97,5 +97,12 @@ export default {
     errorPassword: 'Ijambobanga ntirishobora kuba ubusa',
     errorPass:
       'Ijambobanga rigomba kuba byibuze inyuguti 5 zirimo inyuguti 4 nimibare'
+  },
+  logout: {
+    confirm: `ESE USHAKA GUSOHOKA ?`,
+    profile: 'Umwirondoro',
+    logout: 'Gusohoka',
+    yes: 'Yego',
+    no: 'Hoya'
   }
 };
