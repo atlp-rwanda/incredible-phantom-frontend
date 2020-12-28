@@ -18,12 +18,11 @@ const resources = {
 };
 const languages = ['en', 'fr', 'kin'];
 const options = {
-  order: ['querystring', 'localStorage', 'sessionStorage'],
-  lookupQuerystring: 'lng',
-  lookupLocalStorage: 'i18nextLng',
+  order: ['sessionStorage', 'navigator'],
   lookupSessionStorage: 'i18nextLng',
-  caches: ['localStorage', 'cookie'],
+  caches: ['sessionStorage'],
 };
+
 i18n
   .use(Backend)
   .use(LanguageDetector)

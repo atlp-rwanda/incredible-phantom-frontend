@@ -2,6 +2,14 @@
 
 exports[`home page should return the welcoming page 1`] = `
 <BrowserRouter>
+  <HelmetWrapper
+    defer={true}
+    encodeSpecialCharacters={true}
+  >
+    <title>
+      webtitle
+    </title>
+  </HelmetWrapper>
   <Switch>
     <Route
       component={[Function]}

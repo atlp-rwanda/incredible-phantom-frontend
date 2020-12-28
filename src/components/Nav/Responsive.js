@@ -16,7 +16,7 @@ export const Responsive = () => {
       <div className="resp-navigation">
         <div className="options">
           <LangSelection />
-          <button> {t('nav.signup')}</button>
+          <button className="resp-btn"> {t('nav.signup')}</button>
         </div>
         <div onClick={() => dispatch(Switch())} className="burger">
           <div
@@ -55,6 +55,7 @@ export const Responsive = () => {
         <Link onClick={() => dispatch(Switch())} to="contact" className="link">
           {t('nav.contact')}
         </Link>
+        <button className="resp-btn"> {t('nav.signup')}</button>
       </div>
     </div>
   );

@@ -6,11 +6,10 @@ import UKFlag from '../../assets/icons/UKFlag.png';
 import FR from '../../assets/icons/France.jpg';
 import KIN from '../../assets/icons/Rwanda.jpg';
 import { useTranslation } from 'react-i18next';
-import { Link } from 'react-router-dom';
 
 export const LangSelection = () => {
   const { i18n } = useTranslation();
-  const query = localStorage.getItem('i18nextLng');
+  const query = sessionStorage.getItem('i18nextLng');
   const toggle = useSelector((state) => state.langSelectionReducer);
   const dispatch = useDispatch();
   const translate = async (lang) => {
@@ -44,25 +43,19 @@ export const LangSelection = () => {
           <div>
             <img src={UKFlag} alt="UK Flag" />
           </div>
-          <div>
-            <Link to="?lng=en">English</Link>
-          </div>
+          <div>English</div>
         </button>
         <button onClick={() => translate('fr')}>
           <div>
             <img src={FR} alt="FR Flag" />
           </div>
-          <div>
-            <Link to="?lng=fr">French</Link>
-          </div>
+          <div>French</div>
         </button>
         <button onClick={() => translate('kin')}>
           <div>
             <img src={KIN} alt="RW Flag" />
           </div>
-          <div>
-            <Link to="?lng=kin">KinyaRwanda</Link>
-          </div>
+          <div>KinyaRwanda</div>
         </button>
       </div>
     </div>
