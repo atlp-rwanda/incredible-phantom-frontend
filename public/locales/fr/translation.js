@@ -36,4 +36,31 @@ export default {
       "Cliquez sur le bouton ci-dessous pour être redirigé vers la page d'accueil",
     redirect: `retour à la page d'accueil`,
   },
+  forgot: {
+    title: 'Mot de passe oublié?',
+    placeHolder: 'Entrer votre Email',
+    paragraph:
+      'En cliquant sur le bouton Envoyez-moi un lien de réinitialisation, nous vous donnerons des instructions pour réinitialiser le mot de passe dans votre boîte aux lettres.',
+    btn: 'Envoyez-moi le lien de réinitialisation',
+    back: 'Retour connexion',
+    success: 'Vérifiez votre email',
+    fail: 'Aucun utilisateur trouvé avec cette adresse e-mail',
+    error: "Une erreur s'est produite, vérifiez votre réseau et réessayez",
+  },
+  reset: {
+    title: 'Réinitialiser le mot de passe',
+    newPassword: 'Entrez un nouveau mot de passe',
+    comfirmPassword: 'Confirmer le nouveau mot de passe',
+    paragraph:
+      "Une fois le mot de passe réinitialisé, vous pouvez vous connecter à l'aide de votre nouveau mot de passe.",
+    btn: 'Réinitialiser le mot de passe',
+    success: 'Votre mot de passe a été réinitialisé avec succès',
+    fail: 'Non autorisé, votre lien est expiré demande à nouveau',
+    error: "Une erreur s'est produite, vérifiez votre réseau et réessayez",
+  },
+  validation: {
+    invalidEmail: "L'email n'est pas valide",
+    invalidPassword: "Le mot de passe n'est pas valide",
+    invalidComfirm: 'Vos mots de passe ne correspondent pas',
+  },
 };

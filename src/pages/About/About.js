@@ -13,34 +13,34 @@ export const About = () => {
   return (
     <div>
       <NavigationBar about={onPage} />
-      <div className="About-container">
-        <div className="header">
+      <div className='About-container'>
+        <div className='header'>
           <span>{t('about.title')}</span>
         </div>
-        <div className="Content">
-          <div className="card">
-            <div className="icon">
-              <i className="fas fa-cube"></i>
+        <div className='Content'>
+          <div className='card'>
+            <div className='icon'>
+              <i className='fas fa-cube'></i>
             </div>
-            <div className="description">{t('about.1')}</div>
+            <div className='description'>{t('about.1')}</div>
           </div>
-          <div className="card">
-            <div className="icon">
-              <i className="fas fa-truck-moving"></i>
+          <div className='card'>
+            <div className='icon'>
+              <i className='fas fa-truck-moving'></i>
             </div>
-            <div className="description">{t('about.2')}</div>
+            <div className='description'>{t('about.2')}</div>
           </div>
-          <div className="card">
-            <div className="icon">
-              <i className="fas fa-stopwatch"></i>
+          <div className='card'>
+            <div className='icon'>
+              <i className='fas fa-stopwatch'></i>
             </div>
-            <div className="description">{t('about.3')}</div>
+            <div className='description'>{t('about.3')}</div>
           </div>
-          <div className="card">
-            <div className="icon">
-              <i className="fas fa-cube"></i>
+          <div className='card'>
+            <div className='icon'>
+              <i className='fas fa-cube'></i>
             </div>
-            <div className="description">{t('about.4')}</div>
+            <div className='description'>{t('about.4')}</div>
           </div>
         </div>
       </div>

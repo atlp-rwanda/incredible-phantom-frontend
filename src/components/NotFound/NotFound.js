@@ -10,11 +10,11 @@ export const NotFound = () => {
   return (
     <div>
       <NavigationBar />
-      <div className="container">
-        <div className="emojii">
-          <img src={notFound} alt="NOT FOUND"></img>
+      <div className='container'>
+        <div className='emojii'>
+          <img src={notFound} alt='NOT FOUND'></img>
         </div>
-        <div className="description">
+        <div className='description'>
           <h1> {t('notfound.title')}</h1>
           <span>
             {t('notfound.part1')}
@@ -22,7 +22,7 @@ export const NotFound = () => {
             {t('notfound.part2')}
           </span>
           <br />
-          <Link className="link" to="/">
+          <Link className='link' to='/'>
             <button> {t('notfound.redirect')}</button>
           </Link>
         </div>

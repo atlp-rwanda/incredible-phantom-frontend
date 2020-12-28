@@ -1,6 +1,6 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import App from '../router/App';
+import App from '../../router/App';
 
 jest.mock('react-i18next', () => ({
   useTranslation: () => ({ t: (key) => key }),

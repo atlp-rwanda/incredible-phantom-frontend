@@ -5,9 +5,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const { PORT } = process.env;
 
 module.exports = {
-  entry: {
-    index: path.join(__dirname, 'src', 'index.js'),
-  },
+  entry: ['@babel/polyfill', './src/index.js'],
   output: {
     path: path.join(__dirname, '/dist'),
     filename: 'index.bundle.js',
@@ -37,20 +35,16 @@ module.exports = {
         use: ['style-loader', 'css-loader', 'sass-loader'],
       },
       {
-        test: /.html$/,
-        use: {
-          loader: 'html-loader',
-        },
+        test: /\.(png|jpe?g|gif|mp3|ogg|m4r)$/i,
+        use: [{ loader: 'file-loader' }],
       },
       {
-        test: /.(jpg|jpeg|png|gif|mp3|svg)$/,
-        use: {
-          loader: 'file-loader',
-          options: {
-            name: '[name].[hash].[ext]',
-            outputPath: 'assets',
+        test: /\.(svg)$/i,
+        use: [
+          {
+            loader: 'url-loader',
           },
-        },
+        ],
       },
     ],
   },
