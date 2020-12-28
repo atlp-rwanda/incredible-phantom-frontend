@@ -34,4 +34,31 @@ export default {
     part2: 'Hit The button below to get redirected to the home page!',
     redirect: 'Back to Home',
   },
+  forgot: {
+    title: 'Forgot Password?',
+    placeHolder: 'Enter your email',
+    paragraph:
+      'By clicking Send me a reset link button we will you instructions to reset password in your mail box.',
+    btn: ' Send Me Reset Link',
+    back: 'Back to login',
+    success: 'Check your email',
+    fail: 'No user found with that email address',
+    error: 'There was an error, Check you network and try again',
+  },
+  reset: {
+    title: 'Reset Password',
+    newPassword: 'Enter new password',
+    comfirmPassword: 'Comfirm new password',
+    paragraph:
+      ' After successfully reseting password you can signin using your new password.',
+    btn: 'Reset Password',
+    success: 'Your password reset successfully',
+    fail: 'Not allowed your link is expired reques again',
+    error: 'There was an error, Check you network and try again',
+  },
+  validation: {
+    invalidEmail: 'Email is not Valid',
+    invalidPassword: 'Password is not  Valid',
+    invalidComfirm: "Your passwords don't match",
+  },
 };

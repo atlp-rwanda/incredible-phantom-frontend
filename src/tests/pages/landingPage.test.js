@@ -1,9 +1,9 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import { LandingPage } from '../pages/LandingPage/LandingPage';
-import { NotFound } from '../components/NotFound/NotFound';
-import { Contact } from '../pages/Contact/Contact';
-import { About } from '../pages/About/About';
+import { LandingPage } from '../../pages/LandingPage/LandingPage';
+import { NotFound } from '../../components/NotFound/NotFound';
+import { Contact } from '../../pages/Contact/Contact';
+import { About } from '../../pages/About/About';
 
 jest.mock('react-i18next', () => ({
   useTranslation: () => ({ t: (key) => key }),

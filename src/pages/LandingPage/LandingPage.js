@@ -15,12 +15,12 @@ export const LandingPage = () => {
     <div>
       <div>
         <NavigationBar home={onPage} />
-        <div className="Body">
+        <div className='Body'>
           <h1>{t('title')}</h1>
-          <span id="phantom-slogan">{t('description.slogan')}</span>
-          <img src={phantomImage} alt="Tracking Bus Icon" />
+          <span id='phantom-slogan'>{t('description.slogan')}</span>
+          <img src={phantomImage} alt='Tracking Bus Icon' />
           <button>
-            <i className="fas fa-map-marker-alt" />
+            <i className='fas fa-map-marker-alt' />
             {t('description.startBtn')}
           </button>
         </div>

@@ -1,11 +1,12 @@
 import { combineReducers } from 'redux';
-import { counterReducer } from './counterReducer';
+import { forgotReducer, resetReducer } from './resetReducer';
 import { langSelectionReducer } from './langSelectionReducer';
 import { navReducer } from './navReducer';
 
 const rootReducers = combineReducers({
-  counterReducer,
   navReducer,
   langSelectionReducer,
+  forgotReducer,
+  resetReducer,
 });
 export default rootReducers;
