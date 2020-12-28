@@ -37,7 +37,11 @@ const Settings = ({ toggleSideBar }) => {
           </div>
         </div>
       </Link>
-      <div className={`${drop} ml-4`} onClick={toggleSideBar}>
+
+      <div
+        className={`${drop} ml-4 text-center absolute z-10 rounded bg-phantomDark p-1`}
+        onClick={toggleSideBar}
+      >
         <SideBarItem
           icon={'fas fa-user'}
           text={t('sideBar.profile')}

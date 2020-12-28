@@ -1,0 +1,13 @@
+.sideBar {
+  max-width: 300px;
+  padding: 1rem;
+}
+.inputs-wrapper {
+  display: flex;
+  flex-direction: row;
+}
+input {
+  border: 2px solid black;
+  border-radius: 3px;
+  width: 100%;
+}
