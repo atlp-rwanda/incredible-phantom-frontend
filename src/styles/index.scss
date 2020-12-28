@@ -1,8 +1,17 @@
 @import './_variables';
+@import './fonts';
 
 body {
   margin: 0;
   background-color: $phantomBackground;
+  font-family: $headerFont;
+}
+input,
+button:focus {
+  outline: none;
+}
+button:hover {
+  opacity: 0.9;
 }
 input,
 button:focus {

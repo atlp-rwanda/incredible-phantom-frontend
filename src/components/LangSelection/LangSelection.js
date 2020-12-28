@@ -20,7 +20,7 @@ export const LangSelection = () => {
       <button
         data-testid='drop-down'
         onClick={() => dispatch(dropDown())}
-        className='dropbtn'
+        className='dropbtn  flex'
       >
         <span>
           <img

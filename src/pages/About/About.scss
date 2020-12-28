@@ -6,7 +6,7 @@
   @include flexCenter(column);
   .header {
     width: 60%;
-    margin-bottom: 100px;
+    margin: 50px;
     opacity: 0.8;
     span {
       font-family: $subHeaderFont;

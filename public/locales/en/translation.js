@@ -4,7 +4,7 @@ export default {
     about: 'About',
     terms: 'Terms and Conditions',
     contact: 'Contact Us',
-    signup: 'Sign Up'
+    signup: 'Signin'
   },
   webtitle: 'Phantom | Public transport made easier',
   title: 'WELCOME TO PHANTOM',
@@ -43,7 +43,7 @@ export default {
     back: 'Back to login',
     success: 'Check your email',
     fail: 'No user found with that email address',
-    error: 'There was an error, Check you network and try again',
+    error: 'There was an error, Check you network and try again'
   },
   reset: {
     title: 'Reset Password',
@@ -54,12 +54,12 @@ export default {
     btn: 'Reset Password',
     success: 'Your password reset successfully',
     fail: 'Not allowed your link is expired reques again',
-    error: 'There was an error, Check you network and try again',
+    error: 'There was an error, Check you network and try again'
   },
   validation: {
     invalidEmail: 'Email is not Valid',
     invalidPassword: 'Password is not  Valid',
-    invalidComfirm: "Your passwords don't match",
+    invalidComfirm: "Your passwords don't match"
   },
   signin: {
     title: 'Sign In',
@@ -76,9 +76,19 @@ export default {
   },
   logout: {
     confirm: 'ARE YOU SURE YOU WANT TO LOGOUT ?',
-    profile: 'Profile',
-    logout: 'Logout',
-    yes: 'Yes',
-    no: 'No',
+    profile: 'PROFILE',
+    logout: 'LOGOUT',
+    yes: 'YES',
+    no: 'NO'
+  },
+  sideBar: {
+    overView: 'Overview',
+    roles: 'Roles',
+    drivers: 'Drivers',
+    buses: 'Buses',
+    routes: 'Routes',
+    operators: 'Operators',
+    settings: 'Settings',
+    profile: 'Profile'
   }
 };

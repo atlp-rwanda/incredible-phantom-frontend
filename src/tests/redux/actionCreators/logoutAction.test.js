@@ -5,7 +5,7 @@ import { logoutAction } from '../../../redux/actionCreators/logoutAction';
 import {
   LOGOUT_REQUEST,
   LOGOUT_SUCCESS,
-  LOGOUT_ERROR,
+  LOGOUT_ERROR
 } from '../../../redux/actionTypes/actionTypes';
 
 const store = mockStore();
@@ -28,8 +28,8 @@ describe('Login Actions', () => {
         response: {
           success: true,
           message: 'logged in successfully',
-          data: {},
-        },
+          data: {}
+        }
       });
     });
     await store.dispatch(logoutAction());
@@ -48,8 +48,8 @@ describe('Login Actions', () => {
         response: {
           success: false,
           message: 'error',
-          data: {},
-        },
+          data: {}
+        }
       });
     });
     await store.dispatch(logoutAction());

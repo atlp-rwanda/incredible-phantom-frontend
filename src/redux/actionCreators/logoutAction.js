@@ -3,7 +3,7 @@ import { BACKEND_URL } from '../../helpers/url';
 import {
   LOGOUT_ERROR,
   LOGOUT_REQUEST,
-  LOGOUT_SUCCESS,
+  LOGOUT_SUCCESS
 } from '../actionTypes/actionTypes';
 
 export const logoutAction = (history) => async (dispatch) => {
@@ -12,13 +12,14 @@ export const logoutAction = (history) => async (dispatch) => {
   try {
     const res = await axios.post(`${BACKEND_URL}/api/users/logout`, '', {
       headers: {
-        auth: `Bearer ${token}`,
-      },
+        auth: `Bearer ${token}`
+      }
     });
-      dispatch({ type: LOGOUT_SUCCESS, payload: res.data.success });
-      localStorage.removeItem('authToken');
-      history.push('/signin');
+    dispatch({ type: LOGOUT_SUCCESS, payload: res.data.success });
+    localStorage.clear();
+    history.push('/signin');
   } catch (error) {
+    console.log('EEE', error);
     dispatch({ type: LOGOUT_ERROR, payload: error });
   }
 };

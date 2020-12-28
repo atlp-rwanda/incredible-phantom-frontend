@@ -16,7 +16,7 @@ describe('Login form', () => {
   });
   it('Should fail email validation on login form', () => {
     const wrapper = RenderWithRedux(
-      <LoginForm details={details} setDetails={setDetails} />,
+      <LoginForm details={details} setDetails={setDetails} />
     );
     const form = wrapper.getByTestId('form');
     fireEvent.submit(form);
@@ -26,26 +26,26 @@ describe('Login form', () => {
       <LoginForm details={details} setDetails={setDetails} />,
       {
         isLoggedReducer: {
-          success: true,
-        },
-      },
+          success: true
+        }
+      }
     );
     const password = wrapper.getByTestId('password');
     fireEvent.change(password, {
       target: {
-        value: '123abc',
-      },
+        value: '123abc'
+      }
     });
   });
   it('Should pass email validation on login form', () => {
     const wrapper = RenderWithRedux(
-      <LoginForm details={details} setDetails={setDetails} />,
+      <LoginForm details={details} setDetails={setDetails} />
     );
     const email = wrapper.getByTestId('email');
     fireEvent.change(email, {
       target: {
-        value: 'test@test.test',
-      },
+        value: 'test@test.test'
+      }
     });
     const form = wrapper.getByTestId('form');
     fireEvent.submit(form);

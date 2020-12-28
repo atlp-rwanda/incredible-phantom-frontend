@@ -28,10 +28,15 @@ const signin = () => {
       : dispatch(loggedUser(details));
   };
 
+  if (isLoggedIn) {
+    const loggedInUser = localStorage.getItem('loggedInUser');
+    const user = JSON.parse(loggedInUser);
+    window.location =
+      user.role === 'driver' ? '/dashboard/driver' : '/dashboard';
+  }
   useEffect(() => {
-    isLoggedIn ? (window.location = '/dashboard') : '';
     error ? setErrors(error) : '';
-  }, [isLoggedIn, error]);
+  }, [error]);
 
   return (
     <div>

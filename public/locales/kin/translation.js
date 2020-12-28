@@ -4,7 +4,7 @@ export default {
     about: 'Tumenye',
     terms: 'Amabwiriza',
     contact: 'Tuvugishe',
-    signup: 'Iyandikishe'
+    signup: 'Injira'
   },
   title: 'MURAKAZA NEZA KURI PHANTOM',
   webtitle: 'Phantom | Ingendo rusange zorohejwe',
@@ -57,6 +57,28 @@ export default {
     fail: 'Ntago wemerewe. inzira yawe ishobora kuba ishaje, ongera usabe',
     error: 'Habayemo ikibazo reba niba ufite murandasi wongere ugerageze'
   },
+  signin: {
+    title: 'Injira',
+    email: 'Imeyili yawe',
+    password: 'Ijambobanga',
+    sendBtn: 'Ohereza',
+    forgotPassword: 'Mwibagiwe Ijambobanga?',
+    yourEmail: 'Emeyili yanyu...',
+    yourPassword: 'Ijambobanga ryanyu...',
+    errorEmail:
+      'Imeri yawe igomba kuba ifite agaciro; urugero: "email@example.com"',
+    errorPassword: 'Ijambobanga ntirishobora kuba ubusa',
+    errorPass:
+      'Ijambobanga rigomba kuba byibuze inyuguti 5 zirimo inyuguti 4 nimibare'
+  },
+  logout: {
+    confirm: `
+    ESE KOKO USHAKA GUSOHOKA ?`,
+    profile: 'Umwirondoro',
+    logout: 'Gusohoka',
+    yes: 'Yego',
+    no: 'Hoya'
+  },
   forgot: {
     title: 'Wibagiwe Ijambobanga?',
     placeHolder: 'Injiza Email Yawe',
@@ -99,10 +121,21 @@ export default {
       'Ijambobanga rigomba kuba byibuze inyuguti 5 zirimo inyuguti 4 nimibare'
   },
   logout: {
-    confirm: `ESE USHAKA GUSOHOKA ?`,
+    confirm: `
+    ESE KOKO USHAKA GUSOHOKA ?`,
     profile: 'Umwirondoro',
     logout: 'Gusohoka',
     yes: 'Yego',
     no: 'Hoya'
+  },
+  sideBar: {
+    overView: 'Incamake',
+    roles: 'Inshingano',
+    drivers: 'Abashoferi',
+    buses: 'Imodoka',
+    routes: 'Inzira',
+    operators: 'Abakoresha',
+    settings: 'Igenamiterere',
+    profile: 'Umwirondoro'
   }
 };

@@ -2,6 +2,8 @@
 @import '../../styles/variables';
 
 .container {
+  max-width: 800px;
+  margin: auto;
   @include flexCenter(row);
   height: 80vh;
   width: 70%;
@@ -12,10 +14,6 @@
     i {
       font-size: 15rem;
       color: $phantomGreen;
-    }
-    img {
-      width: 100%;
-      height: auto;
     }
   }
   .description {

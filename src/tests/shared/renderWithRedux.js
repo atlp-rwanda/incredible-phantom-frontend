@@ -16,7 +16,7 @@ const RenderWithRedux = (children, reduxState = {}) => {
       <I18nextProvider i18n={i18n}>
         <Router>{children}</Router>
       </I18nextProvider>
-    </Provider>,
+    </Provider>
   );
 };
 export default RenderWithRedux;
