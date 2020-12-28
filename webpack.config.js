@@ -1,71 +1,50 @@
+require('dotenv/config.js');
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-const ip = require('ip');
-const hostname = ip.address() || 'localhost';
+
+const { PORT } = process.env;
+
 module.exports = {
-  entry: './src/index',
+  entry: {
+    index: path.join(__dirname, 'src', 'index.js'),
+  },
   output: {
+    path: path.join(__dirname, '/dist'),
+    filename: 'index.bundle.js',
     publicPath: '/',
-    path: path.join(__dirname, 'dist'),
-    filename: 'bundle.js'
   },
   devServer: {
-    headers: { 'Access-Control-Allow-Origin': '*', https: true },
+    contentBase: path.join(__dirname, 'src'),
     historyApiFallback: true,
-    contentBase: path.resolve(__dirname, './dist'),
-    publicPath: '/',
-    host: `${hostname}`,
-    port: 3000,
-    hot: true,
+    clientLogLevel: 'silent',
     inline: true,
-    contentBase: './',
-    watchOptions: {
-      poll: true
-    },
-    compress: true,
-    open: true
+    open: true,
+    port: PORT || 4000,
+    hot: true,
   },
   module: {
     rules: [
       {
-        test: /.(js|jsx)$/,
+        test: /\.js|jsx?$/,
         exclude: /node_modules/,
-        use: [
-          {
-            loader: 'babel-loader'
-          }
-        ]
+        loader: 'babel-loader',
+        options: {
+          presets: ['@babel/preset-env', '@babel/preset-react'],
+        },
       },
       {
-        test: /\.scss$/,
-        use: ['style-loader', 'css-loader', 'sass-loader']
+        test: /\.(s[ac]|c)ss$/,
+        use: ['style-loader', 'css-loader', 'sass-loader'],
       },
       {
-        test: /.html$/,
-        use: {
-          loader: 'html-loader'
-        }
+        test: /\.(png|jpe?g|gif|mp3|ogg|m4r)$/i,
+        use: [{ loader: 'file-loader' }],
       },
-      {
-        test: /.(jpg|jpeg|png|gif|mp3|svg)$/,
-        use: {
-          loader: 'file-loader',
-          options: {
-            name: '[name].[hash].[ext]',
-            outputPath: 'assets'
-          }
-        }
-      }
-    ]
+    ],
   },
   plugins: [
     new HtmlWebpackPlugin({
-      filename: 'index.html',
-      template: path.join(__dirname, 'public', 'index.html')
-    })
+      template: path.join(__dirname, 'public/index.html'),
+    }),
   ],
-  resolve: {
-    modules: [path.join(__dirname, 'src'), 'node_modules'],
-    extensions: ['*', '.js', '.jsx']
-  }
 };
