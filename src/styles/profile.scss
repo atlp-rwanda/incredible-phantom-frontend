@@ -1,0 +1,100 @@
+@import './_fonts.scss';
+@import './_variables.scss';
+
+@mixin flexCenter($direction) {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: $direction;
+}
+
+.App {
+  text-align: center;
+}
+
+.profile {
+    margin: 10%;
+    width: 70%;
+    height: 500px;
+    background-color: white;
+    display: column;
+    
+}
+.form{
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 20px;
+    display: list-item;
+    
+}
+#name{
+    margin: 20px;
+    margin-left: 50%;
+}
+
+#name input[name]{
+    font-weight: bold;
+    font-size: 20px;
+    width: 350px;
+    display: block;
+    margin-top: 10px;
+}
+#NID{
+    margin: 20px;
+    margin-left: 50%;
+}
+
+#NID input[type]{
+    font-weight: bold;
+    font-size: 20px;
+    width: 350px;
+    display: block;
+    margin-top: 10px;
+}
+
+#phone{
+    margin: 20px;
+    margin-left: 50%;
+    
+}
+
+#phone input[type]{
+    font-weight: bold;
+    font-size: 20px;
+    width: 350px;
+    display: block;
+    margin-top: 10px;
+}
+
+#email{
+    margin: 20px;
+    margin-left: 50%;
+    width: 80%
+    
+}
+
+#email input[name]{
+    font-weight: bold;
+    font-size: 20px;
+    width: 350px;
+    display: block;
+    margin-top: 10px;
+}
+
+#button #edit{
+    width: 10%;
+    height: 25px;
+    margin-left: 50%;
+    background: rgb(39, 143, 91);
+    font-size: 15px;
+    color: white;
+}
+#button #delete{
+    width: 10%;
+    height: 25px;
+    margin-left: 10%;
+    background: rgb(39, 143, 91);
+    font-size: 15px;
+    color: white;
+}
+
