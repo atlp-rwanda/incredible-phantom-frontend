@@ -2,6 +2,7 @@
 
 exports[`home page should return the welcoming page 1`] = `
 <BrowserRouter>
+
   <Switch>
     <Route
       component={[Function]}
@@ -23,5 +24,6 @@ exports[`home page should return the welcoming page 1`] = `
       component={[Function]}
     />
   </Switch>
+
 </BrowserRouter>
 `;
