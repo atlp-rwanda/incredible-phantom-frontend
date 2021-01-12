@@ -1,9 +1,6 @@
 [![Maintainability](https://api.codeclimate.com/v1/badges/768b125383f468cf4e84/maintainability)](https://codeclimate.com/github/atlp-rwanda/incredible-phantom-frontend/maintainability)
 ![Phantom CI](https://github.com/atlp-rwanda/incredible-phantom-frontend/workflows/Phantom%20CI/badge.svg)
 
-[![Test Coverage](https://api.codeclimate.com/v1/badges/768b125383f468cf4e84/test_coverage)](https://codeclimate.com/github/atlp-rwanda/incredible-phantom-frontend/test_coverage)
-![Phantom CI](https://github.com/atlp-rwanda/incredible-phantom-frontend/workflows/Phantom%20CI/badge.svg)
-
 # INCREDIBLE PHANTOM APP FRONT-END
 
 ## Description
