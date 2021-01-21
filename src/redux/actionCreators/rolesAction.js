@@ -76,7 +76,7 @@ export const editRoleAction = (input, roleID) => async (dispatch) => {
     });
     dispatch({ type: EDIT_ROLE_SUCCESS, payload: response.data.message });
   } catch (error) {
-    error.response.status === 400
+    error
       ? toast.info(i18next.t('roles.editerror'))
       : null;
     dispatch({ type: EDIT_ROLE_ERROR, payload: error.response });

@@ -1,9 +1,7 @@
 require('dotenv/config.js');
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-
 const { PORT } = process.env;
-
 module.exports = {
   entry: ['@babel/polyfill', './src/index.js'],
   output: {

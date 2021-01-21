@@ -3,6 +3,7 @@ import { LandingPage } from '../pages/LandingPage/LandingPage';
 import { About } from '../pages/About/About';
 import { NotFound } from '../components/NotFound/NotFound';
 import { Route, BrowserRouter as Router, Switch } from 'react-router-dom';
+import '../styles/main.css'
 import { Contact } from '../pages/Contact/Contact';
 import { Helmet } from 'react-helmet';
 import { useTranslation } from 'react-i18next';
@@ -13,6 +14,9 @@ import Dashboard from '../components/dashboard/Dashboard';
 import PrivateRoute from '../helpers/PrivateRoute';
 import Drivers from '../components/dashboard/drivers/Drivers';
 import Logout from '../components/Logout/Logout'
+
+
+
 
 const App = () => {
   const { t } = useTranslation();

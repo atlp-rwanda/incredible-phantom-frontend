@@ -1,0 +1,21 @@
+@import '../../styles/fonts';
+@import '../../styles/variables';
+
+
+.tbl{
+  display: flex;
+  justify-items: center;
+  justify-content: center;
+  padding: 100px;
+
+  
+}
+// tbody{
+//     height: 50vh;
+//   }
+table{
+  thead{
+    color: black;
+    font-family: $subHeaderFont;
+    background-color: $phantomLight;}
+}
