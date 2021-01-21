@@ -1,10 +1,8 @@
 @import '../../styles/fonts';
 @import '../../styles/variables';
-
 .roleTable-container {
   width: 100%;
 }
-
 table {
   thead {
     color: black;
@@ -17,7 +15,6 @@ table {
     text-transform: capitalize;
   }
 }
-
 .addBtn {
   width: 100%;
   text-align: right;
@@ -30,7 +27,6 @@ table {
     font-size: 20px;
   }
 }
-
 .editIcon-btn {
   @include phantomButton();
   width: fit-content;
@@ -44,7 +40,6 @@ table {
     background-color: red;
   }
 }
-
 .modal-container {
   background-color: rgba(0, 0, 0, 0.255);
   position: absolute;
@@ -107,7 +102,6 @@ table {
     }
   }
 }
-
 @media only screen and (max-width: 644px) {
   .roleTable-container {
     .dates {

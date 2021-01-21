@@ -4,25 +4,20 @@ import { useTranslation } from 'react-i18next';
 import { useDispatch } from 'react-redux';
 import { editRoleAction } from '../../redux/actionCreators/rolesAction';
 import './Roles.scss';
-
 export default function EditRole({ role, roleId }) {
   const dispatch = useDispatch();
   const { t } = useTranslation();
   const [open, setOpen] = useState(false);
   const [input, setInput] = useState(role);
-
   const modalContainerStyle = {
     display: open ? 'flex' : 'none'
   };
-
   const handleOpen = () => {
     setOpen(true);
   };
-
   const handleClose = () => {
     setOpen(false);
   };
-
   const validation = () => {
     const numbRef = /^[0-9]+$/;
     const charRef = /^[a-zA-Z]+$/;
@@ -34,7 +29,6 @@ export default function EditRole({ role, roleId }) {
       return true;
     }
   };
-
   const saveChanges = async () => {
     if (validation()) {
       dispatch(editRoleAction(input, roleId));
@@ -42,7 +36,6 @@ export default function EditRole({ role, roleId }) {
       handleClose();
     }
   };
-
   return (
     <>
       <button

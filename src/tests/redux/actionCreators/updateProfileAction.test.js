@@ -1,23 +1,36 @@
+import React from 'react';
+import { Provider } from 'react-redux';
+import Profile from '../../../components/dashboard/profile/Profile';
+import { shallow } from 'enzyme';
 import moxios from 'moxios';
 import axiosInstance from 'axios';
 import { mockStore } from '../../../setupTest';
 import {
-  RESET_SUCCESS,
-  RESET_FAILED,
-  FORGOT_SUCCESS,
-  FORGOT_FAILED,
-  FORGOT_PENDING,
-  RESET_PENDING
-} from '../../../redux/actionTypes/actionTypes';
-import {
-  forgotAction,
-  resetAction
-} from '../../../redux/actionCreators/resetAction';
+  UPDATE_FAILED,
+  UPDATE_SUCCESS,
+  UPDATE_PROFILE,
+  VIEW_FAIL,
+  VIEW_PROFILE,
+  VIEW_SUCCESS
+} from '../../../redux/actionTypes/profileType';
+import { viewProfileAction } from '../../../redux/actionCreators/viewProfileAction';
+import { updateProfileAction } from '../../../redux/actionCreators/updateProfileAction';
 
 const store = mockStore();
 const flushPromises = () => new Promise((resolve) => setImmediate(resolve));
 
-describe('Forgot password Actions', () => {
+describe('profile', () => {
+  it('should take a snapshot', () => {
+    const wrapper = shallow(
+      <Provider store={store}>
+        <Profile />
+      </Provider>
+    );
+    expect(wrapper).toMatchSnapshot();
+  });
+});
+
+describe('update profile Actions', () => {
   beforeEach(() => {
     moxios.install(axiosInstance);
   });
@@ -26,48 +39,48 @@ describe('Forgot password Actions', () => {
     moxios.uninstall(axiosInstance);
   });
 
-  it('Should test forgot password ', async (done) => {
+  it('Should test updating profile loading ', async (done) => {
     moxios.wait(async () => {
       const request = moxios.requests.mostRecent();
       request.respondWith({
         status: 200,
         response: {
           success: true,
-          message: 'check your inbox',
+          message: 'profile updated successfully',
           data: {}
         }
       });
     });
-    await store.dispatch(forgotAction('test@test.test'));
+    await store.dispatch(updateProfileAction('test', 'test', 'test'));
     await flushPromises();
     const calledActions = store.getActions();
-    expect(calledActions[0].type).toEqual(FORGOT_PENDING);
-    expect(calledActions[1].type).toEqual(FORGOT_SUCCESS);
+    expect(calledActions[0].type).toEqual(UPDATE_PROFILE);
     done();
   });
-  it('Should test forgot password  fail', async (done) => {
+
+  it('Should test updating profile success ', async (done) => {
     moxios.wait(async () => {
       const request = moxios.requests.mostRecent();
       request.respondWith({
         status: 200,
         response: {
-          success: false,
-          message: 'check your inbox',
+          success: true,
+          message: 'profile updated successfully',
           data: {}
         }
       });
     });
-    await store.dispatch(forgotAction('test@test.test'));
+    await store.dispatch(updateProfileAction('sibo', 'jean', '82323233434'));
     await flushPromises();
     const calledActions = store.getActions();
     done();
   });
 
-  it('Should fail forgot password error ', async (done) => {
+  it('Should fail updating user ', async (done) => {
     moxios.wait(async () => {
       const request = moxios.requests.mostRecent();
-      request.reject({
-        status: 500,
+      request.respondWith({
+        status: 404,
         response: {
           success: false,
           message: 'error',
@@ -75,61 +88,72 @@ describe('Forgot password Actions', () => {
         }
       });
     });
-    await store.dispatch(forgotAction('test@test.test'));
+    await store.dispatch(updateProfileAction());
     await flushPromises();
     const calledActions = store.getActions();
-    expect(calledActions[3].type).toEqual(FORGOT_FAILED);
+    expect(calledActions[1].type).toEqual(UPDATE_FAILED);
     done();
   });
+});
 
-  it('Should test reset password ', async (done) => {
+describe('VIEW profile Actions', () => {
+  beforeEach(() => {
+    moxios.install(axiosInstance);
+  });
+
+  afterEach(() => {
+    moxios.uninstall(axiosInstance);
+  });
+
+  it('Should test VIEW profile loading ', async (done) => {
     moxios.wait(async () => {
       const request = moxios.requests.mostRecent();
       request.respondWith({
         status: 200,
         response: {
           success: true,
-          message: 'password reset successfully',
+          message: 'profile Vewed successfully',
           data: {}
         }
       });
     });
-    await store.dispatch(resetAction('new password', `Bearer token`));
-    await flushPromises();
-    const calledActions = store.getActions();
-    done();
-  });
-  it('Should test reset password  fail ', async (done) => {
-    moxios.wait(async () => {
-      const request = moxios.requests.mostRecent();
-      request.respondWith({
-        status: 200,
-        response: {
-          success: false,
-          message: 'password reset successfully',
-          data: {}
-        }
-      });
-    });
-    await store.dispatch(resetAction('new password', `Bearer token`));
+    await store.dispatch(viewProfileAction());
     await flushPromises();
     const calledActions = store.getActions();
     done();
   });
 
-  it('Should fail reset password error', async (done) => {
+  it('Should test VIEW profile success ', async (done) => {
     moxios.wait(async () => {
       const request = moxios.requests.mostRecent();
-      request.reject({
-        status: 401,
+      request.respondWith({
+        status: 200,
         response: {
-          success: false,
-          message: 'Not authorized',
+          success: true,
+          message: 'profile Viewed successfully',
           data: {}
         }
       });
     });
-    await store.dispatch(resetAction('new password', `Bearer token`));
+    await store.dispatch(viewProfileAction());
+    await flushPromises();
+    const calledActions = store.getActions();
+    done();
+  });
+
+  it('Should fail Viewing Profile user ', async (done) => {
+    moxios.wait(async () => {
+      const request = moxios.requests.mostRecent();
+      request.respondWith({
+        status: 404,
+        response: {
+          success: false,
+          message: 'error',
+          data: {}
+        }
+      });
+    });
+    await store.dispatch(viewProfileAction());
     await flushPromises();
     const calledActions = store.getActions();
     done();

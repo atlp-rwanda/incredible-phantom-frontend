@@ -41,7 +41,7 @@ const RegisterOperators = () => {
     <div className='rightside'>
       <div className='newop'>
         <Modal
-          className='modal'
+          className='modal mt-20'
           isOpen={ModalIsOpen}
           style={{ overlay: { backgroundColor: 'rgba(0,0,0,0.25)' } }}
         >
