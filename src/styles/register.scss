@@ -1,0 +1,161 @@
+@import './_variables.scss';
+@import './fonts.scss';
+body{
+background-color: white;
+}
+.operatorPage{
+ display: flex;
+}
+.leftside{
+    background-color: #081C15;
+    height: 39rem;
+    width: 20%;
+    color:gray;
+    font-family: $headerFont;
+    display: flex;
+    flex-direction: column;
+}
+.rightside h2{
+  margin-left: 15px;
+  font-family: $headerFont;
+}
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    margin-left: 70px;
+    
+  }
+ 
+  td {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+    background-color: #F9F7F7;
+    width: 60px;
+  }
+  th{
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+    background-color: #B7E4C7;
+}
+
+  .Driver-container{
+    border: 1px solid #DADADA;
+    width: 35%;
+    margin: auto;
+    margin-top: 8%;
+    background-color: #ffff;
+    height: 36rem;
+  }
+  
+  .formContainer h2{
+    text-align: center;
+    font-family: $headerFont;
+  }
+  .form ul {
+    list-style: none;
+    font-family: $headerFont;
+  }
+  .form input {
+    width: 90%;
+    height:10px;
+    margin: -5px;
+  }
+  .deny{
+    width: 20%;
+    height: 30px;
+    background-color:#8b0000 ;
+    color: #fff;
+    border:1px solid #8b0000;
+    border-radius: 5px;
+    position: relative;
+    right: 20px;
+  }
+  .confirm{
+    width: 20%;
+    height: 30px;
+    background-color:#2d6a4f ;
+    color: #fff;
+    border:1px solid #2d6a4f;
+    border-radius: 5px;
+    
+  }
+  button{
+    margin:20px;
+  }
+  #times{
+    font-size: 24px;
+    background-color: #8b0000;
+    color: #fff;
+    border-radius: 50%;
+    float: right;
+    margin-right: 20px;
+  }
+  .midsection{
+      display: flex;
+      justify-content: space-between;
+      position: relative;
+      bottom: 30px;
+  }
+  .modal{
+    width: 100%;
+  border: none;
+  outline:none;
+  position:relative;
+  bottom: 90px;
+  left:40px;
+ 
+  }
+  
+  .foot{
+    position: relative;
+    top:5rem;
+    left: 10px;
+    color:#A4A6B3;
+  }
+  .mid{
+    position: relative;
+    top:10px;
+    left: 10px;
+    color:#9FA2B4;
+  }
+  .top{
+    color:#F9F7F7;
+    position:relative;
+    left: 20px;
+  }
+  .newop button{
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    font-family: $headerFont;
+    background-color:#B7E4C7;
+  }
+  .search{
+    position: relative;
+    left: 12rem;
+    height:1rem;
+    top:1.2rem;
+    width: 20rem;
+    border-radius: 2rem;
+    border:none;
+  }
+  .newop{
+    display: flex;
+  }
+  .lang{
+    position: relative;
+    left:35rem;
+  }
+  @media 
+only screen and (max-width: 760px),
+(min-device-width: 768px) and (max-device-width: 1024px)  {
+
+	/* Force table to not be like tables anymore */
+	table, thead, tbody, th, td, tr { 
+		display: block; 
+  }
+  
+}
