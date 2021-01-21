@@ -63,4 +63,24 @@ export default {
     invalidPassword: "Le mot de passe n'est pas valide",
     invalidComfirm: 'Vos mots de passe ne correspondent pas',
   },
+  operator:{
+
+    1: 'Tableau de bord',
+    2: 'Aperçu',
+    3: 'opérateur',
+    4: 'chauffeur',
+    5: 'Route',
+    6: 'réglages',
+    7: 'Nouvel opérateur',
+    8: 'Tous les opérateurs',
+    9:'No',
+    10:'Nom',
+    11:'Prénom',
+    12:'carte Identité ',
+    13:'Email',
+    14:'téléphone',
+    15: 'Ajouter un opérateur',
+    17: 'rôle',
+    18: 'Actions'
+  }
 };

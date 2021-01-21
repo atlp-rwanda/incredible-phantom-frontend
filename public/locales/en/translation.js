@@ -61,4 +61,24 @@ export default {
     invalidPassword: 'Password is not  Valid',
     invalidComfirm: "Your passwords don't match",
   },
+  operator:{
+
+    1: 'Dashboard',
+    2: 'Overview',
+    3: 'operator',
+    4: 'Driver',
+    5: 'Route',
+    6: 'Settings',
+    7: 'New operator',
+    8: 'All Operators',
+    9:'No',
+    10:'FirstName',
+    11:'LastName',
+    12:'NatinalID',
+    13:'Email',
+    14:'Phone',
+    15: 'Add operator',
+    17: 'role',
+    18: 'Actions'
+  }
 };

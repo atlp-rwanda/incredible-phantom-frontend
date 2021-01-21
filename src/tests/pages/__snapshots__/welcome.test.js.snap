@@ -43,6 +43,15 @@ exports[`home page should return the welcoming page 1`] = `
     />
     <Route
       component={[Function]}
+      exact={true}
+      path="/"
+    />
+    <Route
+      component={[Function]}
+      path="/register"
+    />
+    <Route
+      component={[Function]}
     />
   </Switch>
 </BrowserRouter>
