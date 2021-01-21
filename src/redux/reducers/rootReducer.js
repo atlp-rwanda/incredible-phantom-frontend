@@ -9,9 +9,21 @@ import {
   getRolesReducer,
   editRoleReducer,
   deleteRoleReducer,
-  createRoleReducer,
+  createRoleReducer
 } from './rolesReducer';
 
+import {
+  registerReducer,
+  getOperatorReducer,
+  deleteOperatorReducer,
+  editOperatorReducer
+} from './registerOperatorReducer.js';
+import {
+  registerDriverReducer,
+  getDriverReducer,
+  editDriverReducer,
+  deleteDriverReducer
+} from './registerDriverReducer';
 const rootReducers = combineReducers({
   navReducer,
   langSelectionReducer,
@@ -24,5 +36,13 @@ const rootReducers = combineReducers({
   editRoleReducer,
   deleteRoleReducer,
   createRoleReducer,
+  registerReducer,
+  getOperatorReducer,
+  deleteOperatorReducer,
+  editOperatorReducer,
+  registerDriverReducer,
+  getDriverReducer,
+  editDriverReducer,
+  deleteDriverReducer
 });
 export default rootReducers;

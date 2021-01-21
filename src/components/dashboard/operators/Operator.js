@@ -1,7 +1,11 @@
 import React from 'react';
-
+import RegisterOperators from '../../registerOperator';
 const Operator = () => {
-  return <div>This is operator options</div>;
+  return (
+    <div>
+      <RegisterOperators />
+    </div>
+  );
 };
 
 export default Operator;
