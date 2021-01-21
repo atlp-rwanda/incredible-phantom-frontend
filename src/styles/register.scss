@@ -23,12 +23,10 @@ table {
   outline: none;
   width: 30%;
   margin: auto;
-  margin-top: 2rem;
   padding: 10px;
-  height: 93%;
   border-radius: 20px;
 }
-.modaledit{
+.modaledit {
   background-color: white;
   outline: none;
   width: 30%;
@@ -53,7 +51,7 @@ table {
   margin: 0.5rem 0;
 }
 .deny {
-  background-color:#2d6a4f; 
+  background-color: #2d6a4f;
   color: #fff;
   border-radius: 5px;
   padding: 5px;
@@ -61,7 +59,7 @@ table {
   width: 20%;
 }
 .confirm {
-  background-color:#fb5b5b ;
+  background-color: #fb5b5b;
   color: #fff;
   border-radius: 5px;
   padding: 5px;
@@ -191,7 +189,7 @@ table {
     height: 78%;
     border-radius: 10px;
   }
-  .modaledit{
+  .modaledit {
     background-color: white;
     outline: none;
     width: 70%;

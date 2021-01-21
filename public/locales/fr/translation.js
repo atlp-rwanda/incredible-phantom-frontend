@@ -206,5 +206,18 @@ export default {
     registered: 'Chauffuer enregistré avec succès!',
     search: 'chercher le chauffeur',
     updated: 'chauffeur a été mis à jour'
+  },
+  profile: {
+    firstname: 'Prénom:',
+    lastname: 'Nom:',
+    role: 'Rôle:',
+    phonenumber: 'Numéro de téléphone:',
+    nationalid: 'Numéro de C.I:',
+    email: 'Mail:',
+    edit: 'ÉDITER',
+    cancel: 'ANNULER',
+    save: 'ENREGITRER',
+    editprofile: 'Editer le Profile',
+    profile: 'PROFIL'
   }
 };

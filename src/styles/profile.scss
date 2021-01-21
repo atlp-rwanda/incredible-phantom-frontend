@@ -1,0 +1,561 @@
+@import './_variables.scss';
+@import './fonts.scss';
+
+body {
+  background-color: white;
+}
+.popup1 {
+  outline: none;
+  border: none;
+}
+
+.all {
+  height: 90vh;
+  width: 900px;
+  margin-left: 50px;
+}
+.Edit-container-bg {
+  .Edit-container {
+    border: 1px solid #dadada;
+    width: 350px;
+    margin: auto;
+    margin-top: 130px;
+    background-color: white;
+    height: 370px;
+    margin-left: 43%;
+    border-radius: 6px;
+
+    .pEdit {
+      font-family: Arial, Helvetica, sans-serif;
+      text-align: center;
+      font-weight: bold;
+      padding: 10px;
+    }
+
+    .edit-table {
+      height: 230px;
+      width: 340px;
+      margin-left: 10px;
+
+      .item {
+        display: flex;
+
+        .keyEdit {
+          font-size: 15px;
+          height: 15px;
+          margin-top: 20px;
+          width: 170px;
+          height: 10px;
+          margin-bottom: 5px;
+          padding: 20px;
+          margin-left: 10px;
+          border: 1px solid black;
+          border-radius: 5px;
+        }
+        .dataEdit {
+          font-size: 15px;
+          height: 15px;
+          width: 120px;
+          margin-top: 25px;
+          padding: 5px;
+          margin-bottom: 5px;
+          margin-left: 10px;
+        }
+      }
+    }
+
+    .save {
+      width: 90px;
+      height: 30px;
+      background-color: #40916c;
+      color: #fff;
+      border: 1px solid #2d6a4f;
+      border-radius: 5px;
+      margin-left: 40px;
+      margin-top: 20px;
+    }
+
+    .cancel {
+      width: 100px;
+      height: 30px;
+      background-color: #fb5b5b;
+      color: #fff;
+      border: 1px solid #fb5b5b;
+      border-radius: 5px;
+      margin-left: 70px;
+    }
+  }
+}
+
+.ProfilePage {
+  display: flex;
+}
+
+.table {
+  background: white;
+  margin: auto;
+  height: 420px;
+  margin-top: 60px;
+  margin-left: 350px;
+  border-radius: 6px;
+
+  .Container {
+    margin: auto;
+    margin-top: 30px;
+    width: 400px;
+
+    h2 {
+      margin-bottom: 20px;
+      font-family: Arial, Helvetica, sans-serif;
+      text-align: center;
+      font-weight: bold;
+    }
+
+    .data-container {
+      display: flex;
+
+      .key {
+        display: flex;
+        flex-direction: column;
+        font-size: 15px;
+        padding: 5px;
+        margin-left: 30px;
+        width: 150px;
+      }
+      .data {
+        display: inline-block;
+        margin: 5px;
+        width: 245px;
+        height: 30px;
+        font-size: 15px;
+        text-align: left;
+        margin-left: 10px;
+        font-weight: 100;
+      }
+    }
+
+    .edit {
+      width: 100px;
+      height: 40px;
+      background-color: #40916c;
+      color: #fff;
+      border: 1px solid #2d6a4f;
+      border-radius: 5px;
+      margin-left: 38%;
+      margin-top: 30px;
+      outline: none;
+    }
+  }
+}
+
+.skel {
+  background-color: #40916c;
+}
+
+@media (max-width: 700px) {
+  .skel {
+    background-color: #40916c;
+  }
+  .Edit-container-bg {
+    .Edit-container {
+      border: 1px solid #dadada;
+      width: 370px;
+      margin-top: 110px;
+      background-color: white;
+      height: 370px;
+      border-radius: 6px;
+
+      .pEdit {
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: center;
+        font-weight: bold;
+        padding: 10px;
+      }
+
+      .edit-table {
+        height: 230px;
+        width: 340px;
+        margin-left: 4px;
+
+        .item {
+          display: flex;
+
+          .keyEdit {
+            font-size: 15px;
+            height: 15px;
+            margin-top: 20px;
+            width: 170px;
+            height: 10px;
+            margin-bottom: 5px;
+            padding: 20px;
+            margin-left: 10px;
+            border: 1px solid black;
+            border-radius: 5px;
+          }
+          .dataEdit {
+            font-size: 15px;
+            height: 15px;
+            width: 120px;
+            margin-top: 25px;
+            padding: 5px;
+            margin-bottom: 5px;
+            margin-left: 10px;
+          }
+        }
+      }
+
+      .save {
+        width: 90px;
+        height: 30px;
+        background-color: #40916c;
+        color: #fff;
+        border: 1px solid #2d6a4f;
+        border-radius: 5px;
+        margin-left: 40px;
+        margin-top: 20px;
+      }
+
+      .cancel {
+        width: 100px;
+        height: 30px;
+        background-color: #fb5b5b;
+        color: #fff;
+        border: 1px solid #fb5b5b;
+        border-radius: 5px;
+        margin-left: 70px;
+      }
+    }
+  }
+
+  .all {
+    height: 90vh;
+    width: 430px;
+    margin-left: 50px;
+
+    .ProfilePage {
+      display: flex;
+    }
+
+    .table {
+      background: white;
+      margin: auto;
+      height: 550px;
+      margin-left: 20px;
+      margin-top: 18px;
+      border-radius: 6px;
+
+      .Container {
+        margin: auto;
+        width: 380px;
+        height: 550px;
+        margin-left: 10px;
+
+        h2 {
+          font-family: Arial, Helvetica, sans-serif;
+          text-align: center;
+          margin-top: 20px;
+        }
+
+        .data-container {
+          display: inline;
+
+          .key {
+            display: flex;
+            flex-direction: column;
+            font-size: 20px;
+            padding: 1px;
+            margin-left: 30px;
+          }
+          .data {
+            display: inline-block;
+            margin: 5px;
+            width: 245px;
+            height: 30px;
+            font-size: 20px;
+            text-align: left;
+            margin-left: 30px;
+            font-weight: 100;
+          }
+        }
+
+        .edit {
+          width: 90px;
+          height: 30px;
+          background-color: #40916c;
+          color: #fff;
+          border: 1px solid #2d6a4f;
+          border-radius: 5px;
+          margin-left: 30px;
+        }
+      }
+    }
+  }
+  button {
+    margin: 10px;
+    width: 50px;
+    height: 20px;
+  }
+}
+
+@media (max-width: 550px) {
+  .skel {
+    background-color: #40916c;
+  }
+  .Edit-container-bg {
+    .Edit-container {
+      border: 1px solid #dadada;
+      width: 370px;
+      margin: auto;
+      margin-top: 110px;
+      background-color: white;
+      height: 370px;
+      border-radius: 6px;
+
+      .pEdit {
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: center;
+        font-weight: bold;
+        padding: 10px;
+      }
+
+      .edit-table {
+        height: 230px;
+        width: 340px;
+        margin-left: 4px;
+
+        .item {
+          display: flex;
+
+          .keyEdit {
+            font-size: 18px;
+            height: 10px;
+            margin-top: 30px;
+            width: 200px;
+            height: 10px;
+            border: 1px solid black;
+            border-radius: 5px;
+          }
+          .dataEdit {
+            font-size: 15px;
+            height: 15px;
+            width: 120px;
+            margin-left: 10px;
+          }
+        }
+      }
+
+      .save {
+        width: 90px;
+        height: 30px;
+        background-color: #40916c;
+        color: #fff;
+        border: 1px solid #2d6a4f;
+        border-radius: 5px;
+      }
+
+      .cancel {
+        width: 105px;
+        height: 30px;
+        background-color: #fb5b5b;
+        color: #fff;
+        border: 1px solid #fb5b5b;
+        border-radius: 5px;
+        margin-left: 70px;
+      }
+    }
+  }
+
+  .all {
+    background-color: white;
+    height: 630px;
+    width: 380px;
+    margin: auto;
+
+    .ProfilePage {
+      display: flex;
+    }
+
+    .table {
+      background: white;
+      margin: auto;
+      height: 630px;
+      width: 380px;
+      border-radius: 7px;
+
+      .Container {
+        margin: auto;
+        width: 380px;
+        height: 550px;
+
+        h2 {
+          font-family: Arial, Helvetica, sans-serif;
+          text-align: center;
+          margin-top: 20px;
+        }
+
+        .data-container {
+          display: inline;
+
+          .key {
+            display: flex;
+            flex-direction: column;
+            font-size: 22px;
+            width: 270px;
+            font-weight: bold;
+          }
+          .data {
+            display: inline-block;
+            margin: 5px;
+            width: 245px;
+            height: 30px;
+            font-size: 20px;
+            text-align: left;
+            margin-left: 30px;
+          }
+        }
+
+        .edit {
+          width: 90px;
+          height: 40px;
+          background-color: #40916c;
+          color: #fff;
+          border: 1px solid #2d6a4f;
+          border-radius: 5px;
+          margin-left: 150px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 400px) {
+  .skel {
+    background-color: #40916c;
+  }
+  .Edit-container-bg {
+    .Edit-container {
+      border: 1px solid #dadada;
+      width: 270px;
+      margin-top: 110px;
+      background-color: white;
+      height: 470px;
+      margin-left: 20px;
+      border-radius: 6px;
+
+      .pEdit {
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: center;
+        font-weight: bold;
+        padding: 10px;
+      }
+
+      .edit-table {
+        height: 230px;
+        width: 300px;
+
+        .item {
+          display: flex;
+          flex-direction: column;
+
+          .keyEdit {
+            font-size: 15px;
+            height: 10px;
+            width: 170px;
+            height: 10px;
+            border: 1px solid black;
+            border-radius: 5px;
+            margin-bottom: 10px;
+          }
+          .dataEdit {
+            font-size: 15px;
+            height: 10px;
+            width: 150px;
+            margin-top: 1px;
+          }
+        }
+      }
+
+      .save {
+        width: 70px;
+        height: 30px;
+        background-color: #40916c;
+        color: #fff;
+        border: 1px solid #2d6a4f;
+        border-radius: 5px;
+        margin-left: 15px;
+        margin-top: 90px;
+      }
+
+      .cancel {
+        width: 105px;
+        height: 30px;
+        background-color: #fb5b5b;
+        color: #fff;
+        border: 1px solid #fb5b5b;
+        border-radius: 5px;
+        margin-left: 50px;
+      }
+    }
+  }
+
+  .all {
+    background-color: white;
+    height: 85vh;
+    width: 270px;
+    margin-left: 5px;
+
+    .ProfilePage {
+      display: flex;
+    }
+
+    .table {
+      background: white;
+      margin: auto;
+      width: 270px;
+      height: 85vh;
+      margin-left: 0px;
+      margin-top: 0px;
+      border-radius: 6px;
+
+      .Container {
+        margin: auto;
+        width: 250px;
+        height: 490px;
+        margin-left: 5px;
+
+        h2 {
+          font-family: Arial, Helvetica, sans-serif;
+          text-align: center;
+          margin-top: 10px;
+        }
+
+        .data-container {
+          display: flex;
+          flex-direction: column;
+
+          .key {
+            font-size: 15px;
+            font-weight: bold;
+          }
+          .data {
+            width: 200px;
+            height: 30px;
+            font-size: 15px;
+            font-weight: 100;
+          }
+        }
+
+        .edit {
+          width: 80px;
+          height: 40px;
+          background-color: #40916c;
+          color: #fff;
+          border: 1px solid #2d6a4f;
+          border-radius: 5px;
+          margin-top: 5px;
+          margin-left: 100px;
+        }
+      }
+    }
+  }
+}

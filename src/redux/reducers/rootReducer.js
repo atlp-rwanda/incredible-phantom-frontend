@@ -24,6 +24,8 @@ import {
   editDriverReducer,
   deleteDriverReducer
 } from './registerDriverReducer';
+import { updateProfileReducer } from './updateProfileReducer';
+import { viewProfileReducer } from './viewProfileReducer';
 const rootReducers = combineReducers({
   navReducer,
   langSelectionReducer,
@@ -43,6 +45,8 @@ const rootReducers = combineReducers({
   registerDriverReducer,
   getDriverReducer,
   editDriverReducer,
-  deleteDriverReducer
+  deleteDriverReducer,
+  updateProfileReducer,
+  viewProfileReducer
 });
 export default rootReducers;

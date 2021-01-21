@@ -169,6 +169,20 @@ export default {
     deleted: 'Driver succefully deleted',
     registered: 'Driver successfully registered!',
     search: 'Search driver',
-    updated: ' Driver updated'
+    updated: ' Driver updated',
+    actions: 'actions'
+  },
+  profile: {
+    firstname: 'First Name:',
+    lastname: 'Last Name:',
+    role: 'Role:',
+    phonenumber: 'Phone Number:',
+    nationalid: 'National I.D:',
+    email: 'Email:',
+    edit: 'EDIT',
+    cancel: 'CANCEL',
+    save: 'SAVE',
+    editprofile: 'EDIT PROFILE',
+    profile: 'PROFILE'
   }
 };
