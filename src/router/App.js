@@ -12,6 +12,7 @@ import Reset from '../components/resetPassword/Reset';
 import Dashboard from '../components/dashboard/Dashboard';
 import PrivateRoute from '../helpers/PrivateRoute';
 import Drivers from '../components/dashboard/drivers/Drivers';
+import Logout from '../components/Logout/Logout'
 
 const App = () => {
   const { t } = useTranslation();
@@ -30,6 +31,7 @@ const App = () => {
         <PrivateRoute path={'/dashboard'} exact component={Dashboard} />
         <PrivateRoute path={'/dashboard/driver'} exact component={Drivers} />
         <Route component={NotFound} />
+        
       </Switch>
     </Router>
   );

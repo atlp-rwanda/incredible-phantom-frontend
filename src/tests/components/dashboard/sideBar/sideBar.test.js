@@ -7,7 +7,7 @@ import Settings from '../../../../components/dashboard/sidebar/SettingsBar';
 
 describe('Side bar', () => {
   const user = JSON.stringify({
-    role: 'admin',
+    role: 'operator'
   });
   localStorage.setItem('loggedInUser', user);
   it('Should render Side bar component', () => {
@@ -20,7 +20,7 @@ describe('Side bar', () => {
         text={'sideBar'}
         pageToRender={'drivers'}
       />,
-      {},
+      {}
     );
     const item = wrapper.getByTestId('item');
     fireEvent.click(item);
@@ -29,6 +29,7 @@ describe('Side bar', () => {
   it('Should render Side settings bar component', () => {
     const wrapper = RenderWithRedux(<Settings />, {});
     const crat = wrapper.getByTestId('crat');
+    fireEvent.click(crat);
     fireEvent.click(crat);
   });
 });

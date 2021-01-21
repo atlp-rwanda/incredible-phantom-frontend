@@ -1,0 +1,249 @@
+@import './_variables.scss';
+@import './fonts.scss';
+body {
+  background-color: white;
+}
+table {
+  thead {
+    color: black;
+    font-family: $subHeaderFont;
+    background-color: $phantomLight;
+  }
+  tbody {
+    font-family: $normalFont;
+    font-weight: bold;
+    text-transform: capitalize;
+  }
+}
+.rightside {
+  width: 100%;
+}
+.modal {
+  background-color: white;
+  outline: none;
+  width: 30%;
+  margin: auto;
+  margin-top: 2rem;
+  padding: 10px;
+  height: 93%;
+  border-radius: 20px;
+}
+.modaledit{
+  background-color: white;
+  outline: none;
+  width: 30%;
+  margin: auto;
+  margin-top: 2rem;
+  padding: 10px;
+  height: 80%;
+  border-radius: 20px;
+}
+.modal_detail {
+  margin-left: 20%;
+}
+.form form {
+  margin-left: 0%;
+}
+.form input {
+  border: 2px solid black;
+  width: 100%;
+  height: 30px;
+  border-radius: 3px;
+  padding: 1.2rem;
+  margin: 0.5rem 0;
+}
+.deny {
+  background-color:#2d6a4f; 
+  color: #fff;
+  border-radius: 5px;
+  padding: 5px;
+  margin-top: 10px;
+  width: 20%;
+}
+.confirm {
+  background-color:#fb5b5b ;
+  color: #fff;
+  border-radius: 5px;
+  padding: 5px;
+  margin-top: 10px;
+  width: 20%;
+}
+.midsection {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5px;
+}
+.midsection input {
+  width: 25%;
+  border-radius: 3px;
+  border: white;
+  height: 30px;
+  background-color: white;
+}
+.midsection h2 {
+  font-family: $headerFont;
+  font-size: 25px;
+}
+
+.newop button {
+  padding: 6px;
+  border-radius: 3px;
+  border: none;
+  font-family: $headerFont;
+  background-color: #b7e4c7;
+  color: black;
+  position: relative;
+  left: 170px;
+  top: -43px;
+}
+.edit {
+  background-color: #2d6a4f;
+  color: white;
+  border: none;
+  width: 100%;
+  border-radius: 3px;
+  font-size: 12px;
+  padding: 10px;
+}
+.delete {
+  background-color: #fb5b5b;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  font-size: 12px;
+  padding: 10px;
+  width: 70%;
+  margin-left: 10px;
+}
+.headtable {
+  background-color: #b7e4c7;
+  height: 40px;
+}
+.buttons {
+  display: flex;
+  justify-content: space-between;
+}
+#times {
+  font-size: 24px;
+  background-color: #fb5b5b;
+  color: #fff;
+  border-radius: 50%;
+  float: right;
+  margin-right: 20px;
+}
+.foot {
+  position: relative;
+  top: 5rem;
+  left: 10px;
+  color: #a4a6b3;
+}
+.mid {
+  position: relative;
+  top: 10px;
+  left: 10px;
+  color: #9fa2b4;
+}
+.top {
+  color: #f9f7f7;
+  position: relative;
+  left: 20px;
+}
+.table-container {
+  width: 100%;
+  margin: auto;
+  overflow: auto;
+  margin-left: 10px;
+}
+.formContainer h2 {
+  margin-left: 100px;
+  font-size: 20px;
+}
+@media only screen and (max-width: 760px),
+  (min-device-width: 768px) and (max-width: 1024px) {
+  .newop {
+    display: flex;
+    justify-content: space-around;
+  }
+  .midsection input {
+    width: 50%;
+    background-color: white;
+  }
+  .midsection input {
+    width: 25%;
+    border-radius: 3px;
+    border: white;
+    height: 26px;
+    background-color: white;
+  }
+  .midsection h2 {
+    font-family: $headerFont;
+    font-size: 20px;
+    margin-left: -5px;
+  }
+  .modal {
+    background-color: white;
+    outline: none;
+    width: 70%;
+    margin: auto;
+    margin-top: 2rem;
+    padding: 10px;
+    height: 78%;
+    border-radius: 10px;
+  }
+  .modaledit{
+    background-color: white;
+    outline: none;
+    width: 70%;
+    margin: auto;
+    margin-top: 2rem;
+    padding: 10px;
+    height: 67%;
+    border-radius: 10px;
+  }
+  .modal_detail {
+    margin-left: 20%;
+  }
+  .form form {
+    margin-left: 0%;
+  }
+  .form input {
+    border: 1px solid black;
+    width: 100%;
+    height: 30px;
+    border-radius: 3px;
+  }
+  .deny {
+    background-color: #2d6a4f;
+    color: #fff;
+    border-radius: 3px;
+    padding: 5px;
+    margin: 10px;
+    width: 25%;
+  }
+  .confirm {
+    background-color: #fb5b5b;
+    color: #fff;
+    border-radius: 3px;
+    padding: 5px;
+    margin: 10px;
+    width: 25%;
+  }
+  .dates {
+    display: none;
+  }
+  .newop button {
+    padding: 2px;
+    border-radius: 3px;
+    border: none;
+    font-family: $headerFont;
+    background-color: #b7e4c7;
+    color: black;
+    position: relative;
+    left: -95px;
+    top: 5px;
+  }
+  .modal_detail {
+    margin-right: 20px;
+  }
+}
