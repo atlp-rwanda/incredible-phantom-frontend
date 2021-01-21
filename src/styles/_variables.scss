@@ -3,6 +3,7 @@ $phantomLight: #b7e4c7;
 $phantomGreen: #2d6a4f;
 $phantomDark: #081c15;
 $phantomHover: #119354;
+$phantomLightGreen: #B7E4C7;
 
 @mixin flexCenter($direction) {
   display: flex;
@@ -33,3 +34,4 @@ $phantomHover: #119354;
   border-radius: 3px;
   outline: none;
 }
+

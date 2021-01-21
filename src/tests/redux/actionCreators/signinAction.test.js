@@ -31,7 +31,10 @@ describe('Login Actions', () => {
         }
       });
     });
-    await store.dispatch(loggedUser('test@test.test'));
+    await store.dispatch(loggedUser({
+      email: 'admin@test.test',
+      password: '123abc'
+    }));
     await flushPromises();
     const calledActions = store.getActions();
     expect(calledActions[0].type).toEqual(SET_LOADING);

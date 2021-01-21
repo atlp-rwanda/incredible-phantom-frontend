@@ -2,7 +2,7 @@ import React from 'react';
 import { useTranslation } from 'react-i18next';
 import SideBarItem from './SideBarItem';
 import SettingsBar from './SettingsBar';
-import { options, optionAdmin } from './sidebarItemOptions';
+import { options, optionAdmin, optionOperator } from './sidebarItemOptions';
 
 const SideBar = ({ toggleSideBar }) => {
   const { t } = useTranslation();
@@ -33,9 +33,22 @@ const SideBar = ({ toggleSideBar }) => {
               />
             ))}
           </div>
-        ) : (
-          ''
+        ) : user.role== 'operator' ? (
+          <div>
+          {optionOperator.map((option) => (
+            <SideBarItem
+              icon={option.icon}
+              pageToRender={option.pageToRender}
+              text={t(option.text)}
+              key={option.icon}
+            />
+          ))}
+        </div>
+
+        ) : (''
         )}
+
+        
       </div>
       <div className='mt-12'>
         <SettingsBar toggleSideBar={toggleSideBar} />

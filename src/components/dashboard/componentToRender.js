@@ -6,6 +6,7 @@ import Buses from './buses/Buses';
 import Routes from './routes/Routes';
 import Profile from './profile/Profile';
 import Operator from './operators/Operator';
+import AssignDriver from './assignDriver/AssignDriver'
 
 localStorage.setItem('pageToRender', 'overView');
 export const ComponentToRender = () => {
@@ -22,6 +23,8 @@ export const ComponentToRender = () => {
     <Operator />
   ) : page === 'profile' ? (
     <Profile />
+  ) : page === 'assignDriver' ? (
+    <AssignDriver />
   ) : (
     <OverView />
   );
