@@ -31,8 +31,12 @@ i18n
     fallbackLng: 'en',
     resources,
     ns: 'translation',
-    debug: true,
     whitelist: languages,
+    nonExplicitWhitelist: true,
+    react: {
+      wait: true,
+      useSuspense: false,
+    },
     lowerCaseLng: true,
     detection: options,
     interpolation: {

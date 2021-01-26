@@ -18,7 +18,11 @@ export const Responsive = () => {
           <LangSelection />
           <button className="resp-btn"> {t('nav.signup')}</button>
         </div>
-        <div onClick={() => dispatch(Switch())} className="burger">
+        <div
+          data-testid="burger"
+          onClick={() => dispatch(Switch())}
+          className="burger"
+        >
           <div
             style={{
               transform: toggle ? 'rotate(45deg)' : 'rotate(0)',
@@ -43,16 +47,16 @@ export const Responsive = () => {
           transform: toggle ? 'translateX(0px)' : 'translateX(-100%)',
         }}
       >
-        <Link onClick={() => dispatch(Switch())} to="/" className="link">
+        <Link data-testid="home" onClick={() => dispatch(Switch())} to="/" className="link">
           {t('nav.home')}
         </Link>
-        <Link onClick={() => dispatch(Switch())} to="/about" className="link">
+        <Link data-testid="about" onClick={() => dispatch(Switch())} to="/about" className="link">
           {t('nav.about')}
         </Link>
-        <Link onClick={() => dispatch(Switch())} to="/terms" className="link">
+        <Link data-testid="terms" onClick={() => dispatch(Switch())} to="/terms" className="link">
           {t('nav.terms')}
         </Link>
-        <Link onClick={() => dispatch(Switch())} to="contact" className="link">
+        <Link data-testid="contact" onClick={() => dispatch(Switch())} to="contact" className="link">
           {t('nav.contact')}
         </Link>
         <button className="resp-btn"> {t('nav.signup')}</button>

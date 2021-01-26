@@ -27,21 +27,6 @@ exports[`home page should return the welcoming page 1`] = `
       path="/contact"
     />
     <Route
-      component={
-        Object {
-          "$$typeof": Symbol(react.memo),
-          "WrappedComponent": [Function],
-          "compare": null,
-          "type": [Function],
-        }
-      }
-      path="/counter"
-    />
-    <Route
-      component={[Function]}
-      path="/skeleton"
-    />
-    <Route
       component={[Function]}
     />
   </Switch>
