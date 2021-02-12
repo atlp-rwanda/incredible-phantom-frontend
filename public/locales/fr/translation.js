@@ -134,5 +134,32 @@ export default {
     operators: 'Operateurs',
     settings: 'Réglages',
     profile: 'Profil'
+  },
+  buses: {
+    create: 'Créer un bus',
+    created: 'Bus créé avec succès',
+    updated: 'Bus mis à jour avec succès',
+    already: 'Ce Bus existe déjà',
+    number: 'Les nombres ne peuvent pas être des Bus',
+    short: 'Cela ne peut pas être un bus',
+    confirm: 'Êtes-vous sûr de vouloir supprimer ce bus ? ',
+    deleted: 'Bus supprimé avec succès',
+    editerror: `Une erreur s'est produite lors de l'édition`,
+    deleteerror: `Une erreur s'est produite lors de la suppression d'un bus`,
+    edit: 'Modifier un bus',
+    editbtn: 'Éditer',
+    createbtn: 'Créer',
+    deletebtn: 'Effacer',
+    cancelbtn: 'Annuler',
+    savebtn: 'sauver',
+    yesbtn: 'Oui',
+    nobtn: 'Non',
+    buses: 'Buses',
+    plateNo: 'N ° de plaque',
+    brand: 'Marque',
+    busId: 'Id de bus',
+    actions: 'actions',
+    allBuses: 'Toutes les Bus',
+    search: 'recherche de bus...'
   }
 };

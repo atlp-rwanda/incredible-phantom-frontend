@@ -137,5 +137,32 @@ export default {
     operators: 'Abakoresha',
     settings: 'Igenamiterere',
     profile: 'Umwirondoro'
+  },
+  buses: {
+    create: 'Andikisha Bisi',
+    created: 'Bisi ishyizwe muri sisteme',
+    updated: 'Bisi ishyizwe kugihe birakozwe',
+    already: 'Bisi isanzwe iri muri sisteme',
+    number: 'Nabwo imibare yemewe',
+    short: 'Izina rya Bisi nirigufiya',
+    confirm: 'Uzi neza ko ushaka gusiba iyi Bisi',
+    deleted: 'Bisi irasibwe muri sisteme',
+    deleteerror: `Hari ikibazo kivutse mugusiba Bisi`,
+    edit: 'Andukura Bisi',
+    editerror: `Hari ikibazo kivutse mukwandukura Bisi`,
+    editbtn: 'andukura',
+    deletebtn: 'siba',
+    createbtn: 'andika',
+    savebtn: 'Emeza',
+    yesbtn: 'yego',
+    nobtn: 'oya',
+    cancelbtn: 'Hagarika',
+    buses: 'Bisi',
+    plateNo: 'Purake ya Bisi',
+    brand: 'Ikirango',
+    busId: 'Nimero ya Bisi',
+    actions: 'ibikorwa',
+    allBuses: 'Bisi zose',
+    search: 'Shakisha Bisi...'
   }
 };
