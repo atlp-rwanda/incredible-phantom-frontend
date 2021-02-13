@@ -134,5 +134,18 @@ export default {
     operators: 'Operateurs',
     settings: 'Réglages',
     profile: 'Profil'
-  }
-};
+  },
+  profile: {
+    firstname:'Prénom:',
+    lastname:'Nom:',
+    role:'Rôle:',
+    phonenumber:'Numéro de téléphone:',
+    nationalid:'Numéro de C.I:',
+    email:'Mail:',
+    edit:'ÉDITER',
+    cancel:'ANNULER',
+    save:"ENREGITRER",
+    editprofile:'Editer le Profile',
+    profile:'PROFIL'
+  },
+}

@@ -3,7 +3,6 @@ import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
 import Logout from '../../Logout/Logout';
 import SideBarItem from './SideBarItem';
-
 const Settings = ({ toggleSideBar }) => {
   const { t } = useTranslation();
   const [drop, setDrop] = useState('hidden');
@@ -22,7 +21,7 @@ const Settings = ({ toggleSideBar }) => {
             className='text-gray-200 mt-1 mr-3 ml-7 fa fa-cog '
             aria-hidden='true'
           ></i>
-          <di className='flex'>
+          <div className='flex'>
             <p>{t('sideBar.settings')}</p>
             {drop === 'hidden' ? (
               <i
@@ -35,10 +34,9 @@ const Settings = ({ toggleSideBar }) => {
                 aria-hidden='true'
               ></i>
             )}
-          </di>
+          </div>
         </div>
       </Link>
-
       <div className={`${drop} ml-4`} onClick={toggleSideBar}>
         <SideBarItem
           icon={'fa fa-bus'}
@@ -52,5 +50,4 @@ const Settings = ({ toggleSideBar }) => {
     </div>
   );
 };
-
 export default Settings;

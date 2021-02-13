@@ -90,5 +90,18 @@ export default {
     operators: 'Operators',
     settings: 'Settings',
     profile: 'Profile'
-  }
-};
+  },
+  profile: {
+    firstname:'First Name:',
+    lastname: 'Last Name:',
+    role:'Role:',
+    phonenumber: 'Phone Number:',
+    nationalid:'National I.D:',
+    email:'Email:',
+    edit:'EDIT',
+    cancel:'CANCEL',
+    save:'SAVE',
+    editprofile:'EDIT PROFILE',
+    profile:'PROFILE'
+  },
+}

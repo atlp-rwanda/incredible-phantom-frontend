@@ -4,7 +4,8 @@ import { langSelectionReducer } from './langSelectionReducer';
 import { navReducer } from './navReducer';
 import isLoggedReducer from '../reducers/isLogged';
 import { logoutReducer } from './logoutReducer';
-
+import {updateProfileReducer } from './updateProfileReducer';
+import {viewProfileReducer} from './viewProfileReducer';
 const rootReducers = combineReducers({
   navReducer,
   langSelectionReducer,
@@ -13,5 +14,7 @@ const rootReducers = combineReducers({
   resetReducer,
   auth: isLoggedReducer,
   logoutReducer,
+    updateProfileReducer,
+  viewProfileReducer
 });
 export default rootReducers;

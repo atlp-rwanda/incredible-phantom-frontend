@@ -137,5 +137,18 @@ export default {
     operators: 'Abakoresha',
     settings: 'Igenamiterere',
     profile: 'Umwirondoro'
-  }
-};
+  },
+  profile: {
+    firstname:'Izina Rusange:',
+    lastname: 'Izina Bwite:',
+    role:'Uruhare:',
+    phonenumber:'Nimero ya Telefoni:',
+    nationalid:`Nimero y'Irangamuntu:`,
+    email:'Imeli:',
+    edit:'HINDURA',
+    cancel:'GUHAGARIKA',
+    save:'BIKA NEZA',
+    editprofile:'GUHINDURA UMWIRONDORO',
+    profile:'UMWIRONDORO'
+  },
+}
