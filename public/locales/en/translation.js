@@ -90,5 +90,32 @@ export default {
     operators: 'Operators',
     settings: 'Settings',
     profile: 'Profile'
+  },
+  buses: {
+    create: 'Create bus',
+    created: 'Bus created successfully',
+    updated: 'Bus updated successfully',
+    already: 'Bus already exists',
+    number: 'Numbers cannot be bus',
+    short: 'That cannot be a bus',
+    confirm: 'Are you sure you want to delete this bus ',
+    deleted: 'Bus deleted successfully',
+    deleteerror: `There was an error while deleting a bus`,
+    edit: 'Edit Bus',
+    editerror: 'There was an error while editing',
+    editbtn: 'Edit',
+    createbtn: 'Create',
+    deletebtn: 'Delete',
+    savebtn: 'Save',
+    yesbtn: 'Yes',
+    nobtn: 'No',
+    cancelbtn: 'Cancel',
+    buses: 'Buses',
+    plateNo: 'Plate No',
+    brand: 'Brand',
+    busId: 'Bus Id',
+    actions: 'actions',
+    allBuses: 'All Buses',
+    search: 'Search Bus...'
   }
 };
