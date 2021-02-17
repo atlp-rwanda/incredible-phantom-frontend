@@ -79,54 +79,10 @@ export default {
     yes: 'Yego',
     no: 'Hoya'
   },
-  forgot: {
-    title: 'Wibagiwe Ijambobanga?',
-    placeHolder: 'Injiza Email Yawe',
-    paragraph:
-      'Numara gukanda kuri Saba guhindura, inzira yo guhindura ijambobanga turayikoherereza kuri email yawe',
-    btn: 'Ohereza Ubusabe',
-    back: 'Subira kwinjira',
-    success: 'Byagenze neza Reba muri email yawe',
-    fail: 'Ntamuntu wagaragaye ukoresha iyo email',
-    error: 'Habayemo ikibazo reba niba ufite murandasi wongere ugerageze'
-  },
-  reset: {
-    title: 'Hindura Ijambobanga',
-    newPassword: 'Injiza ijambobanga rishya',
-    comfirmPassword: 'Subiramo ijambobanga rishya',
-    paragraph:
-      ' Numara gukora ijambobanga rishya niryo uzajya ukoresha winjira.',
-    btn: 'Hindura Ijambobanga',
-    success: 'Your password reset successfully',
-    fail: 'Ntago wemerewe. inzira yawe ishobora kuba ishaje, ongera usabe',
-    error: 'Habayemo ikibazo reba niba ufite murandasi wongere ugerageze'
-  },
   validation: {
     invalidEmail: 'Email ntago yemewe',
     invalidPassword: 'Ijambobanga ntiryemewe',
     invalidComfirm: 'Amajambobanga ntago asa'
-  },
-  signin: {
-    title: 'Injira',
-    email: 'Imeyili yawe',
-    password: 'Ijambobanga',
-    sendBtn: 'Ohereza',
-    forgotPassword: 'Mwibagiwe Ijambobanga?',
-    yourEmail: 'Emeyili yanyu...',
-    yourPassword: 'Ijambobanga ryanyu...',
-    errorEmail:
-      'Imeri yawe igomba kuba ifite agaciro; urugero: "email@example.com"',
-    errorPassword: 'Ijambobanga ntirishobora kuba ubusa',
-    errorPass:
-      'Ijambobanga rigomba kuba byibuze inyuguti 5 zirimo inyuguti 4 nimibare'
-  },
-  logout: {
-    confirm: `
-    ESE KOKO USHAKA GUSOHOKA ?`,
-    profile: 'Umwirondoro',
-    logout: 'Gusohoka',
-    yes: 'Yego',
-    no: 'Hoya'
   },
   sideBar: {
     overView: 'Incamake',
@@ -137,5 +93,30 @@ export default {
     operators: 'Abakoresha',
     settings: 'Igenamiterere',
     profile: 'Umwirondoro'
-  }
+  },
+  routes: {
+    Route: 'IMIHANDA',
+    RouteId: `Umuhanda`,
+    create: 'Kora Umuhanda',
+    Origin: 'Itangiriro',
+    Destination:'Iherezo',
+    Distance:'Uburebure',
+    BusStop:'Icyapa',
+    AssignedBus:'Bisi zikoraho',
+    Action:'Igikorwa',
+    created: 'Umuhanda wakozwe neza',
+    updated: 'Umuhanda wavuguruwe neza',
+    already: 'Umuhanda usanzwe ubaho',
+    confirm: 'Urashaka gusiba umuhanda?',
+    deleted: 'Gusiba umuhanda byemeye',
+    cancel: 'Kubireka',
+    delete: 'Siba',
+    confirm: 'Emeza',
+    yes: 'Yego',
+    no: 'Hoya',
+    edit: 'Vugurura',
+    edited: 'Umuhanda wahinduwe neza',
+    editRoute:`Hindura Umuhanda`,
+    save: 'BIKA',
+  }	
 };

@@ -78,52 +78,10 @@ export default {
     yes: 'Oui',
     no: 'Non'
   },
-  forgot: {
-    title: 'Mot de passe oublié?',
-    placeHolder: 'Entrer votre Email',
-    paragraph:
-      'En cliquant sur le bouton Envoyez-moi un lien de réinitialisation, nous vous donnerons des instructions pour réinitialiser le mot de passe dans votre boîte aux lettres.',
-    btn: 'Envoyez-moi le lien de réinitialisation',
-    back: 'Retour connexion',
-    success: 'Vérifiez votre email',
-    fail: 'Aucun utilisateur trouvé avec cette adresse e-mail',
-    error: "Une erreur s'est produite, vérifiez votre réseau et réessayez"
-  },
-  reset: {
-    title: 'Réinitialiser le mot de passe',
-    newPassword: 'Entrez un nouveau mot de passe',
-    comfirmPassword: 'Confirmer le nouveau mot de passe',
-    paragraph:
-      "Une fois le mot de passe réinitialisé, vous pouvez vous connecter à l'aide de votre nouveau mot de passe.",
-    btn: 'Réinitialiser le mot de passe',
-    success: 'Votre mot de passe a été réinitialisé avec succès',
-    fail: 'Non autorisé, votre lien est expiré demande à nouveau',
-    error: "Une erreur s'est produite, vérifiez votre réseau et réessayez"
-  },
   validation: {
     invalidEmail: "L'email n'est pas valide",
     invalidPassword: "Le mot de passe n'est pas valide",
     invalidComfirm: 'Vos mots de passe ne correspondent pas'
-  },
-  signin: {
-    title: 'Se Connecter',
-    email: 'Adresse e-mail',
-    password: 'Mot de passe',
-    sendBtn: 'Envoyer',
-    forgotPassword: 'Mot de passe oublié?',
-    yourEmail: 'votre email...',
-    yourPassword: 'votre mot de passe..',
-    errorEmail: 'Votre e-mail doit être valide; exemple: "email@example.com"',
-    errorPassword: 'Le mot de passe ne peuvent pas être vides',
-    errorPass:
-      'Le mot de passe doit comporter au moins 5 caractères, dont 4 lettres et chiffres'
-  },
-  logout: {
-    confirm: `ÊTES-VOUS SÛR DE VOULOIR VOUS DÉCONNECTER`,
-    profile: 'Profile',
-    logout: 'Se deconnecte',
-    yes: 'Oui',
-    no: 'Non'
   },
   sideBar: {
     overView: 'Aperçu',
@@ -134,5 +92,30 @@ export default {
     operators: 'Operateurs',
     settings: 'Réglages',
     profile: 'Profil'
-  }
+  },
+  routes: {
+    Route: 'ITINÉRAIRES',
+    RouteId: 'Numéro de Route',
+    Destination:'Destination',
+    Distance:'Disatance',
+    BusStop:'Arrêt Bus',
+    AssignedBus:'bus attribué',
+    Action:'Action',
+    create: 'Crééer une itinéraire',
+    Origin: 'Origine',
+    created: 'Itinéraire est Crééé avec succès',
+    updated: `La mise à jour de l'itinéraire est réussie`,
+    already: 'itinéraire existe déjà',
+    confirm: 'Êtes-vous sûr de vouloir supprimer cet itinéraire',
+    deleted: 'Itinéraire est supriméé avec succès',
+    cancel: 'Annuler',
+    delete: 'Effacer',
+    confirm: 'Confirmer',
+    yes: 'Oui',
+    no: 'Non',
+    edit: 'Éditer',
+    edited: 'Itinéraire éditée',
+    editRoute:`Éditer`,
+    save: 'Sauvegarder',
+  }	  
 };

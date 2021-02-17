@@ -1,5 +1,4 @@
 import React from 'react';
-import OverView from './overView/OverView';
 import Drivers from './drivers/Drivers';
 import Roles from './roles/Roles';
 import Buses from './buses/Buses';
@@ -7,7 +6,8 @@ import Routes from './routes/Routes';
 import Profile from './profile/Profile';
 import Operator from './operators/Operator';
 
-localStorage.setItem('pageToRender', 'overView');
+
+localStorage.setItem('pageToRender', 'drivers');
 export const ComponentToRender = () => {
   const page = localStorage.getItem('pageToRender');
   return page === 'drivers' ? (
@@ -22,7 +22,9 @@ export const ComponentToRender = () => {
     <Operator />
   ) : page === 'profile' ? (
     <Profile />
+  ) : page === 'assignDriver' ? (
+    <AssignDriver />
   ) : (
-    <OverView />
+    <Drivers />
   );
 };

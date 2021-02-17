@@ -12,7 +12,7 @@ const LoginForm = ({ submitHandler, error, details, setDetails }) => {
     error
       ? toast.error(error, {
           draggable: true,
-          position: toast.POSITION.TOP_CENTER,
+          position: toast.POSITION.TOP_CENTER
         })
       : '';
   }, [error]);
@@ -48,7 +48,7 @@ const LoginForm = ({ submitHandler, error, details, setDetails }) => {
                 }
                 value={details.password}
               />
-              <Link to='/' className='link'>
+              <Link to='forgotpassword' className='link'>
                 {t('signin.forgotPassword')}
               </Link>
             </div>

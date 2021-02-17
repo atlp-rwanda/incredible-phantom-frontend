@@ -1,10 +1,5 @@
 export const options = [
   {
-    icon: 'fa fa-pie-chart',
-    pageToRender: 'overView',
-    text: 'sideBar.overView'
-  },
-  {
     icon: 'fa fa-bus',
     text: 'sideBar.buses',
     pageToRender: 'buses'
@@ -30,5 +25,13 @@ export const optionAdmin = [
     icon: 'fa fa-address-card',
     text: 'sideBar.roles',
     pageToRender: 'roles'
+  }
+];
+
+export const optionOperator = [
+  {
+    icon: 'fa fa-bus',
+    text: 'sideBar.assignDriver',
+    pageToRender: 'assignDriver'
   }
 ];

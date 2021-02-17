@@ -9,16 +9,16 @@ export default {
   webtitle: 'Phantom | Public transport made easier',
   title: 'WELCOME TO PHANTOM',
   description: {
-    slogan: "  Track your Bus' movements anywhere from your device.",
+    slogan: "  Track your bus' movements anywhere from your device.",
     startBtn: 'Start tracking!'
   },
   about: {
     title:
       'Fostering fast movement with Phantom. We simulate your next bus enabling you to track your movement',
     1: ' Real time tracking your next bus accordingly and set when your schedule accordingly',
-    2: "Easily identify and follow your bus on the map. Leave for the bus when it's actually close.",
+    2: "Easily identify and follow your bus on the map. Leave for the route when it's actually close.",
     3: 'Real time tracking your next bus accordingly and set when your schedule accordingly',
-    4: "Easily identify and follow your bus on the map. Leave for the bus when it's actually close."
+    4: "Easily identify and follow your bus on the map. Leave for the route when it's actually close."
   },
   contact: {
     title: 'Contact Us:',
@@ -90,5 +90,32 @@ export default {
     operators: 'Operators',
     settings: 'Settings',
     profile: 'Profile'
-  }
+  },
+  routes: {
+    Route: 'ROUTES',
+    RouteId: 'Route ID',
+    create: 'Create route',
+    Origin: 'Origin',
+    Distance:'Distance',
+    BusStop:'Bus Stop',
+    Destination:'Destination',
+    AssignedBus:'Assigned Bus',
+    Action:'Action',
+    created: 'route created successfully',
+    updated: 'route updated successfully',
+    already: 'route already exists',
+    number: 'Numbers cannot be route',
+    short: 'That cannot be a route',
+    confirm: 'Are you sure you want to delete this route ',
+    deleted: 'route deleted successfully',
+    cancel: 'Cancel',
+    delete: 'Delete',
+    confirm: 'Confirm',
+    yes: 'Yes',
+    no: 'No',
+    edit: 'Edit',
+    edited: 'Route edited Successfully',
+    editRoute:`Edit`,
+    save: 'Save',
+  }	  
 };
