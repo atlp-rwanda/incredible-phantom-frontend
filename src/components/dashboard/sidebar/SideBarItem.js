@@ -10,7 +10,7 @@ const SideBarItem = ({ icon, text, pageToRender }) => {
     <Link to='#'>
       <div
         data-testid='item'
-        className='flex justify-start mt-1 p-2 hover:bg-gray-800'
+        className='flex justify-start mt-1 pr-2 hover:bg-gray-800'
         onClick={() => changePageToRender()}
       >
         <i className={clases} aria-hidden='true'></i>

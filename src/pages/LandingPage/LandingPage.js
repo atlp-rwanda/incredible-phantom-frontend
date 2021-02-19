@@ -4,6 +4,7 @@ import { Footer } from '../../components/Footer/Footer';
 import phantomImage from '../../assets/images/phantomImage.jpg';
 import { useTranslation } from 'react-i18next';
 import './LandingPage.scss';
+import { Link } from 'react-router-dom';
 
 export const LandingPage = () => {
   const { t } = useTranslation();
@@ -19,10 +20,13 @@ export const LandingPage = () => {
           <h1 data-testid='welcome'>{t('title')}</h1>
           <span id='phantom-slogan'>{t('description.slogan')}</span>
           <img src={phantomImage} alt='Tracking Bus Icon' />
-          <button>
-            <i className='fas fa-map-marker-alt' />
-            {t('description.startBtn')}
-          </button>
+
+          <Link to='/trackBus'>
+            <button>
+              <i className='fas fa-map-marker-alt' />
+              {t('description.startBtn')}
+            </button>
+          </Link>
         </div>
         <Footer />
       </div>

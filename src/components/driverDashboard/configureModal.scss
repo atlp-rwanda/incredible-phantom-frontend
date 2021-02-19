@@ -1,0 +1,27 @@
+.modal-container {
+  background-color: rgba(0, 0, 0, 0.255);
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  justify-content: center;
+  align-items: center;
+  z-index: 8;
+  display: flex;
+  .modal {
+    background-color: white;
+    min-width: 300px;
+    padding: 10px;
+  }
+}
+.select {
+  align-items: center;
+}
+.select select {
+  border: black 2px solid;
+  border-radius: 3px;
+  padding: 0 10px;
+  height: 35px;
+  text-align: center;
+}

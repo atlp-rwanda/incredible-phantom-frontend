@@ -27,7 +27,7 @@ describe('Login Actions', () => {
         status: 200,
         response: {
           success: true,
-          message: 'fetched drivers',
+          message: 'logged in successfully',
           data: {}
         }
       });
